@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫众筹平台">
+  <meta name="keywords" content="西瓜虫,众筹,西瓜虫众筹">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png"> 
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  --> 
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.min.css">
+  <link rel="stylesheet" href="css/loading.min.css"> 
+  <link rel="stylesheet" href="css/item_dream.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a   
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <div class="loadingWrap"><div class="loading"></div></div>
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">   
+      <a href="index.html">     
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+      </a>
+    </div>
+    <h1 class="am-header-title">           
+      <span>项目介绍</span>                   
+    </h1>   
+  </header> 
+     
+  <!-- 内容块 -->
+  <div class="am-padding-bottom" id="content"> 
+    <!-- <img src="imgs/item/liangcejiazai@3x.png" id="poster"> -->
+    <!-- 点赞 --> 
+    <img src="" class="block zan" id="zan">	
+    <div class="textCenter am-margin-bottom-xs"> 
+    	<span id="praiseNum"></span>人赞
+    </div>
+    <!-- 评论框 -->
+   	<div class="bottom marginCenter font15" id="bottom">说点啥呗...</div>
+   	<!-- 发送消息 -->
+	  <div id="sendMsg" class="am-padding-sm textCenter">
+	    <span class="cancel am-fl">取消</span>
+	    <span class="totalNum am-text-sm">限116个字符</span> 
+	    <span class="send am-fr">发送</span> 
+	    <textarea rows="4" maxlength="116" class="text marginCenter"></textarea>
+	  </div>
+    <!-- 加载更多 -->  
+    <div class="am-list-news-ft am-margin-top more">
+      <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;"></a>
+    </div>
+	  <div class="am-modal am-modal-alert" tabindex="-1" id="sendTip">
+	    <div class="am-modal-dialog">
+	      <div class="am-modal-bd" id="tipCont">
+	      </div>
+	      <div class="am-modal-footer">
+	        <span class="am-modal-btn">确定</span>
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script src="js/common.min.js"></script>
+<script src="js/item_dream.js"></script>
+</body>
+</html>

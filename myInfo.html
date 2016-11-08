@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->       
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">     
+  
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/myInfo.css">
+</head>
+<body>  
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <div class="loadingWrap"><div class="loading"></div></div>
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">
+      <a href="index.html">
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png" />   
+      </a>
+    </div>
+    <h1 class="am-header-title">  
+      <span>我的资料</span>   
+    </h1>    
+  </header>
+
+  <div id="tipWrap"><div id="tip"></div></div>
+
+  <!-- 内容块 -->
+  <div id="content">
+    <div class="header textCenter">
+      <img src="imgs/login/touxiang-1@2x.png" id="headerImg">
+    </div>
+    <div class="user-info marginCenter" id="user-info">
+      <ul>
+        <li>
+          <a href="modifyName.html" id="modName">  
+            <span>昵称 :</span>        
+            <i class="am-icon-angle-right am-fr"></i>
+            <span id="userName"></span>              
+          </a>   
+        </li> 
+        <li>
+          <a href="modifyPhone.html" id="modMobile">
+            <span>手机 :</span>    
+            <i class="am-icon-angle-right am-fr"></i>
+            <span id="mobile"></span>
+          </a>
+        </li>
+        <li>
+          <a href="modifyPwd.html" id="modPwd"> 
+            <span>密码修改 :</span>
+            <i class="am-icon-angle-right am-fr"></i>
+          </a>
+        </li>
+        <li>            
+          <a href="getAddress.html?from=mi"> 
+            <span>地址管理 :</span> 
+            <i class="am-icon-angle-right am-fr"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->  
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]--> 
+<script src="assets/js/amazeui.min.js"></script> 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/getwxConfig.js"></script>
+<script src="js/myInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫众筹平台">
+  <meta name="keywords" content="西瓜虫,众筹,西瓜虫众筹">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser --> 
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png"> 
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/modifyPwd.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">   
+      <a href="javascript:history.go(-1);">     
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+      </a>
+    </div>
+    <h1 class="am-header-title">          
+      <span>修改密码</span>              
+    </h1>
+  </header> 
+
+  <div id="tipWrap"><div id="tip"></div></div>
+
+  <!-- 内容块 -->
+  <div id="content">   
+    <input type="password" class="am-form-field" id="oldPwd" placeholder="原密码">      
+    <input type="password" class="am-form-field" id="newPwd1" placeholder="新密码">
+    <input type="password" class="am-form-field" id="newPwd2" placeholder="确认密码">
+    <button type="button" class="am-btn am-btn-block btn am-text-lg" id="btn" data-am-loading="{spinner: 'circle-o-notch', loadingText: '加载中...'}">确认修改</button>
+  </div>
+<!--[if lt IE 9]>        
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>      
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>    
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->    
+<script src="assets/js/jquery.min.js"></script> 
+<!--<![endif]-->   
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/common.js"></script> 
+<script type="text/javascript">  
+  var mod_tip = {
+    PASSWORD_ILLEGAL: '密码至少六位字符！',
+    PASSWORD_DIFFERENT: '两次密码不一致！'
+  }        
+  $(function(){          
+
+    var oldPwd = $('#oldPwd'), 
+        newPwd1 = $('#newPwd1'), 
+        newPwd2 = $('#newPwd2'),
+        tipWrap = $('#tipWrap'),  
+        btn = $('#btn'),                 
+        location = window.location;
+
+    // 修改昵称                           
+    btn.on('click' ,function(){ 
+      var _this = $(this);
+      _this.button('loading');                 
+      if(trim(oldPwd.val()).length < 6 || trim(newPwd2.val()).length < 6){  
+        setTip(mod_tip.PASSWORD_ILLEGAL, warning); 
+        _this.button('reset');                  
+      }else if(trim(newPwd1.val()) != trim(newPwd2.val())){ 
+        setTip(mod_tip.PASSWORD_DIFFERENT, warning);
+        _this.button('reset');        
+      }else{        
+        var userObj = JSON.parse(session.getItem('user'));   
+        $.post('/Info/updatePassword', {userId: userObj.userId, oldPassword: oldPwd.val(), newPassword: newPwd1.val()}, function(data){
+          if(data.state == 'fail'){
+            setTip(data.msg, error);
+            _this.button('reset');        
+          }else{
+            location.href = 'myInfo.html'; 
+          }
+        })             
+      }          
+    })
+
+    // 设置提示
+    function setTip(tipStr, tipType) {
+      var str = '<div id="tip"></div>';
+      $('#tip').remove();
+      tipWrap[0].innerHTML = str;
+      tipShowHide($('#tip'), tipType, tipStr);   
+    }
+
+  })           
+</script>
+</body>
+</html>

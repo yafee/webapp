@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png"> 
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/addAddress.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">   
+      <a href="javascript:;">     
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+      </a>
+    </div>
+    <h1 class="am-header-title">          
+      <span>新增收货地址</span>                  
+    </h1>
+  </header> 
+
+  <div id="tipWrap"><div id="tip"></div></div>
+
+  <!-- 内容块 -->
+  <div id="content">  
+    <div class="address-info">     
+      <div>
+        <span class="receiver inlineBlock">收货人姓名</span>  
+        <input type="text" id="receiver">
+        <hr data-am-widget="divider" class="am-divider am-divider-dashed"/>    
+      </div>        
+      <div>
+        <span class="phone inlineBlock">手机号码</span>  
+        <input type="text" id="phone">
+        <hr data-am-widget="divider" class="am-divider am-divider-dashed"/>
+      </div>
+      <div>      
+        <span class="province inlineBlock">省份</span>  
+        <select class="am-fr" id="provinces"></select>
+        <hr data-am-widget="divider" class="am-divider am-divider-dashed"/>   
+      </div>
+      <div>      
+        <span class="province inlineBlock">城市</span>   
+        <select class="am-fr" id="citys"></select>
+        <hr data-am-widget="divider" class="am-divider am-divider-dashed"/>   
+      </div>   
+      <div>
+        <span class="province inlineBlock">详细地址</span>  
+        <textarea class="am-fr" id="address"></textarea>
+        <hr data-am-widget="divider" class="am-divider am-divider-dashed"/>
+      </div>
+    </div>
+    <button type="button" class="am-btn am-btn-block btn am-text-lg" id="saveBtn" data-am-loading="{spinner: 'circle-o-notch', loadingText: '保存中...'}">保存地址</button>
+  </div>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/disabledMenu.js"></script>
+<script src="js/addAddress.js?ram="+Math.random()></script>
+</body>
+</html>

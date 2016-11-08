@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">        
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/city.css">
+
+  <script src="http://api.map.baidu.com/api?v=2.0&ak=abcs"></script>
+
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <div class="loadingWrap"><div class="loading"></div></div>
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">
+      <a href="index.html">
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+      </a>
+    </div>
+    <h1 class="am-header-title">
+      <span>城市选择</span>
+    </h1>
+  </header>
+
+  <!-- 内容块 -->
+  <div id="content">
+    <div class="header">
+      <ul>
+        <li>
+          <span>当前城市</span>
+          <span id="location"></span>
+        </li>
+         <li>
+          <span>&nbsp;&nbsp;&nbsp;城市列表</span>
+        </li>
+      </ul>
+    </div>
+    <div class="index">
+      <ul>
+        <a href="#a"><li>A</li></a>
+        <a href="#b"><li>B</li></a>
+        <a href="#c"><li>C</li></a>
+        <a href="#d"><li>D</li></a>
+        <a href="#e"><li>E</li></a>
+        <a href="#f"><li>F</li></a>
+        <a href="#g"><li>G</li></a>
+        <a href="#h"><li>H</li></a>
+        <a href="#i"><li>I</li></a>
+        <a href="#j"><li>J</li></a>
+        <a href="#k"><li>K</li></a>
+        <a href="#l"><li>L</li></a>
+        <a href="#m"><li>M</li></a>
+        <a href="#n"><li>N</li></a>
+        <a href="#o"><li>O</li></a>
+        <a href="#p"><li>P</li></a>
+        <a href="#q"><li>Q</li></a>
+        <a href="#r"><li>R</li></a>
+        <a href="#s"><li>S</li></a>
+        <a href="#t"><li>T</li></a>
+        <a href="#u"><li>U</li></a>
+        <a href="#v"><li>V</li></a>
+        <a href="#w"><li>W</li></a>
+        <a href="#x"><li>X</li></a>
+        <a href="#y"><li>Y</li></a>
+        <a href="#z"><li>Z</li></a>
+      </ul>
+    </div>
+    <div class="list">
+      <ul>
+        <span id="a">A</span>
+      </ul>
+      <ul>
+        <span id="b">B</span>
+      </ul>
+      <ul>
+        <span id="c">C</span>
+      </ul>
+      <ul>
+        <span id="d">D</span>
+      </ul>
+      <ul>
+        <span id="e">E</span>
+      </ul>
+      <ul>
+        <span id="f">F</span>
+      </ul>
+      <ul>
+        <span id="g">G</span>
+      </ul>
+      <ul>
+        <span id="h">H</span>
+      </ul>
+      <ul>
+        <span id="i">I</span>
+      </ul>
+      <ul>
+        <span id="j">J</span>
+      </ul>
+      <ul>
+        <span id="k">k</span>
+      </ul>
+      <ul>
+        <span id="l">l</span>
+      </ul>
+      <ul>
+        <span id="m">M</span>
+      </ul>
+      <ul>
+        <span id="n">N</span>
+      </ul>
+      <ul>
+        <span id="o">O</span>
+      </ul>
+      <ul>
+        <span id="p">P</span>
+      </ul>
+      <ul>
+        <span id="q">Q</span>
+      </ul>
+      <ul>
+        <span id="r">R</span>
+      </ul>
+      <ul>
+        <span id="s">S</span>
+      </ul>
+      <ul>
+        <span id="t">T</span>
+      </ul>
+      <ul>
+        <span id="u">U</span>
+      </ul>
+      <ul>
+        <span id="v">V</span>
+      </ul>
+      <ul>
+        <span id="w">W</span>
+      </ul>
+      <ul>
+        <span id="x">X</span>
+      </ul>
+      <ul>
+        <span id="y">Y</span>
+      </ul>
+      <ul>
+        <span id="z">Z</span>
+      </ul>
+    </div>
+  </div>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/city.js"></script>
+</body>
+</html>

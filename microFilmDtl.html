@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <title>微电影详情</title>
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/microFilmDtl.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a   
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+  <!-- <div class="mask"></div> -->
+  <div class="loadingWrap">
+    <div class="loading"></div>
+  </div>
+  <!-- 内容块 -->
+  <div class="content">
+    <div class="videoBack" style="display: none;"></div>
+    <div class="video relative">
+      <img src="imgs/index/shipin@2x.png" width="80" height="80" alt="播放按钮" class="am-img-responsive playBtn">
+      <div class="videoMain" style="display: none;">
+      </div>
+    </div>
+    <div class="movieIntro">
+      <div class="curTicket am-text-center am-padding-vertical-sm">
+        <span class="voteNum"></span>
+        <br>
+        <span>当前票数</span>
+      </div>
+      <div class="movieDtl am-text-center">
+        <span class="movieName am-block am-margin-bottom-sm"></span>
+        <div class="moviePeople am-inline-block am-text-left relative am-margin-bottom-sm">
+          <table>
+            <tr>
+              <td>导演：</td>
+              <td class="director"></td>
+            </tr>
+            <tr>
+              <td class="staring">演员：</td>
+              <td>
+                <table class="actorList">
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="description am-text-left"></div>
+        <!-- <span class="movieTitle">风情巴尔干移轴摄影《科索沃万花筒》</span> -->
+      </div>
+      <!-- bottomBar -->
+      <div class="bottomBar am-text-center">
+        <div class="share">
+          <img src="imgs/index/shareg@2x.png" width="25" height="23" alt="评论图标">
+          <span>分享</span>&nbsp;<span class="shareNums"></span>
+        </div>
+        <div class="comment" id="comment">
+          <img src="imgs/index/comment@2x.png" width="25" height="23" alt="评论图标">
+          <span>评论</span>&nbsp;<span class="commentNums"></span>
+        </div>
+        <div class="vote">我要投票</div>
+      </div>
+      <!-- 投票弹出框 -->
+      <!-- <div class="am-modal am-modal-no-btn" tabindex="-1" id="voteModal">
+        <div class="voteTitle">
+          投票确认
+        </div>
+        <div class="voteBody am-text-left am-center">
+        </div>
+        <button class="am-round cancelVote" data-am-modal-close>取消投票</button>
+        <button class="am-round confirmVote">确定投票</button>
+      </div> -->
+    </div>
+    <div class="commentPlace" style="display: none;">
+      <div class="am-g commentTitle">
+        <div class="am-u-sm-6">评论区</div>
+        <div class="am-u-sm-6 am-text-right">
+          <span class="am-icon am-icon-times" id="close"></span>
+        </div>
+      </div>
+      <div class="commentBody">
+        <a href="javascript:;" class="more">加载更多&raquo;</a>
+      </div>
+      <!-- comment输入框 -->
+      <div class="am-input-group commentBar">
+        <input type="text" class="am-form-field" id="inputWords" placeholder="我来说两句...">
+        <span class="am-input-group-label"><button id="send" disabled="disabled">发送</button></span>
+      </div>
+    </div>
+  </div>
+  <div class="am-modal am-modal-no-btn" tabindex="-1" id="tips">
+    <div class="voteBody am-text am-center">
+      请关注:西瓜虫娱乐
+      <br> 微信号:cn_xiguachong
+    </div>
+  </div>
+  <!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/getwxConfig.js"></script>
+  <script src="js/microFilmDtl.js"></script>
+</body>
+
+</html>

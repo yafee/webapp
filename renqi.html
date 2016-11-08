@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="description" content="">
+  <meta name="keywords" content=""> 
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+  <!-- Set render engine for 360 browser -->      
+  <meta name="renderer" content="webkit">
+    
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>    
+         
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">   
+  -->
+   
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">           
+  <link rel="stylesheet" href="css/base.css"> 
+  <style type="text/css">
+    .poster{
+      width: 100%;
+      max-width: 100rem;
+      display: none;
+    }
+    html,body{
+      background: #202020;
+      position: relative;
+      height: 100%;
+      text-align: center;
+    }
+    .container{
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      z-index: 999999;
+      transform: translate(-50%, -50%);  
+      -webkit-transform: translate(-50%, -50%);
+    }
+    .help{
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      border: 1px #fff solid; 
+      border-radius: 50%;
+      -webkit-animation: rotation 1s ease-in-out infinite;
+         -moz-animation: rotation 1s ease-in-out infinite;
+              animation: rotation 1s ease-in-out infinite;
+    }
+    .help:after{
+      width: 5px;
+      height: 5px; 
+      background-color: rgba(255,255,255,1);  
+      border-radius: 100%; 
+      position: absolute; 
+      content: ""; 
+    }
+    @-webkit-keyframes rotation{
+      0%{-webkit-transform: rotate(0deg);}
+      100%{-webkit-transform: rotate(360deg);}
+    }
+    @-moz-keyframes rotation{  
+      0%{-moz-transform: rotate(0deg);}
+      100%{-moz-transform: rotate(360deg);}
+    }
+    @keyframes rotation{
+      0%{transform: rotate(0deg);}
+      100%{transform: rotate(360deg);}
+    }
+  </style>
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>        
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>      
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->   
+      
+  <!--[if (gte IE 9)|!(IE)]><!-->   
+  <!--<![endif]--> 
+</head>
+<body>
+	<header data-am-widget="header" class="am-header am-header-default">
+	  <div class="am-header-left am-header-nav back">
+	    <a href="javascript:history.go(-1);">
+	      <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+	    </a>
+	  </div>  
+	  <h1 class="am-header-title">       
+	    <span>详细</span>           
+	  </h1>    
+	</header>
+
+  <!-- 加载动画 -->
+  <div class="container"><div class="help"></div></div>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script> 
+<![endif]-->   
+ 
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>   
+<!--<![endif]-->      
+<script src="assets/js/amazeui.min.js"></script> 
+<script src="js/common.js"></script>
+<script type="text/javascript">
+  window.onload = function(){
+    var dealId = getQueryString('dealId');
+    var cateId = getQueryString('cateId');
+    jQuery.ajax({
+      url: '/project/getImage',
+      type: 'GET',
+      data: {dealId: dealId, cateId: cateId}, 
+      success: function(data) {
+        if (data.state == 'success') {
+          $('header').after(
+            '<img src="'+ data.object +'" class="am-img-responsive poster">'
+          );
+          displayController($('.help'), $('.poster'));
+        } else {
+          alert(data.msg);
+        }
+      }
+    })
+  }
+</script>
+</body>
+</html>

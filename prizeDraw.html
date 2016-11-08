@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <title>每日抽奖</title>
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/base.css"> -->
+  <link rel="stylesheet" href="css/prizeDraw.css?ram="+Math.random()>
+</head>
+
+<body>
+  <img src="imgs/prizeDraw/bg.png" class="bg" alt="">
+  <div class="cover"></div>
+  <div class="g-content">
+    <div class="g-lottery-case">
+      <div class="g-left">
+        <div class="g-lottery-box">
+          <div class="g-lottery-img">
+            <a class="playbtn" href="javascript:;" title="开始抽奖"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="javascript:;"><img src="imgs/prizeDraw/button.png" class="watch"></a>
+  </div>
+  <div class="am-modal am-modal-no-btn" tabindex="-1" id="modal">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd">
+        <!-- <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a> -->
+      </div>
+      <div class="am-modal-bd tips">
+        <!-- 今天手气不佳，明天再来吧~ <img src="imgs/prizeDraw/cry.png" height="20" alt=""> -->
+      </div>
+      <button data-am-modal-close class="tipsBtn">知道了</button>
+    </div>
+  </div>
+  <script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/zhuge.js"></script>
+  <script src="js/common.js"></script>
+  <script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+  <script src="js/prizeDraw.js?rad="+Math.random()></script>
+  <script src="js/disabledMenu.js"></script>
+</body>
+
+</html>

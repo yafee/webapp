@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫众筹平台">
+  <meta name="keywords" content="西瓜虫,众筹,西瓜虫众筹">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <title>西瓜虫演出</title>
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">     
+  -->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="http://api.map.baidu.com/api?v=1.2" type="text/javascript"></script>
+  <script src="js/zhuge.js"></script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>     
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default am-hide">
+    <!-- 左侧栏触发器 -->
+    <div class="am-header-left am-header-nav menu-nav">
+      <a href="#leftside" data-am-offcanvas>
+        <img src="imgs/index/menu@2x.png">
+      </a>
+    </div>
+    <!-- 左侧导航栏 -->
+    <div id="leftside" class="am-offcanvas textCenter">
+      <div class="am-offcanvas-bar">
+        <div class="am-offcanvas-content">
+          <img class="logo" src="imgs/leftside/logo@2x.png">
+          <!-- 导航 -->
+          <ul class="left-nav" id="left-nav">
+            <li>
+              <a href="javascript:void(0);">
+                <img src="imgs/leftside/wezhi--@2x.png">
+                <span class='am-sans-serif' id="location">定位中...</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <img src="imgs/leftside/xuanzefenlei-@2x.png">
+                <span class='am-sans-serif'>首页</span>
+              </a>
+              <li>
+                <a href="javascript:void(0);" class="am-vertical-align">
+                  <img src="imgs/leftside/tuijianxiangmu@2x.png" class="am-vertical-align-middle">
+                  <span class='am-sans-serif am-vertical-align-middle' style="margin-left: .9rem;">Live&nbsp;House</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <img src="imgs/leftside/panxibobao@3x.png">
+                  <span class='am-sans-serif'>来斯秀</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <img src="imgs/leftside/paihangbang@2x.png">
+                  <span class='am-sans-serif'>排行榜</span>
+                </a>
+              </li>
+          </ul>
+          <div class="left-btn">
+            <div class="am-fl am-margin-top-xl"><a href="start.html">项目发起</a></div>
+            <!-- <div class="am-fl"><a href="">商务合作</a></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="search marginCenter">
+      <img src="imgs/index/sousuo-1@2x.png">
+      <input type="text" placeholder="搜索明星、演唱会、场馆" class="am-text-sm">
+    </div>
+    <!-- 右侧栏触发器 -->
+    <div class="am-header-right am-header-nav user-nav">
+      <a href="#rightside" data-am-offcanvas>
+        <img src="imgs/index/yonghu-@2x.png">
+      </a>
+    </div>
+    <!-- 个人信息栏 -->
+    <div id="rightside" class="am-offcanvas textCenter">
+      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+        <div class="am-offcanvas-content">
+          <img class="user-header" src="imgs/login/touxiang-1@2x.png">
+          <span class="user-title am-sans-serif">您还没有登录</span>
+          <!-- 登录导航 -->
+          <ul class="right-nav" id="right-nav">
+            <li>
+              <a href="/user/WechatLogin">
+                <img src="imgs/login/weixin@2x.png">
+                <span class='am-sans-serif'>微信登录</span>
+              </a>
+            </li>
+            <li>
+              <a href="login.html">
+                <img src="imgs/login/shouji@2x.png">
+                <span class='am-sans-serif'>手机登录</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:window.location.href = 'http://www.xiguachong.cn/user/QQLogin;'">
+                <img src="imgs/login/qq@2x.png">
+                <span>QQ<span class='am-sans-serif'>登录</span></span>
+              </a>
+            </li>
+            <!-- 登陆成功后在此处加两个列表“我的订单”和“分享有礼” -->
+            <li>
+              <a href="register.html">
+                <img src="imgs/login/zhuce@2x.png">
+                <span class='am-sans-serif'>注册账号</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 内容块 -->
+  <div id="content">
+    <!-- 标签 -->
+    <!-- <div class="tab textCenter" id="tab">
+      <a class='am-sans-serif' href="javascript:void(0);">金蜂鸟奖</a>
+      <a class='am-sans-serif' href="javascript:void(0);">推荐众筹</a>
+      <a class='am-sans-serif' href="javascript:void(0);">演出众筹</a>
+      <a class='am-sans-serif' href="javascript:void(0);">星动众筹</a>
+      <a class='am-sans-serif' href="##">梦想众筹</a>                  
+    </div> -->
+    <div></div>
+    <!-- 演出众筹 -->
+    <div class="quanbu" id="quanbu">
+      <!-- 轮播图用JS动态初始化，否则会有加载延迟!!!! -->
+      <div class="am-slider am-slider-a1">
+        <ul class="am-slides"></ul>
+      </div>
+      <!-- 种类 -->
+      <div class="kind textCenter marginCenter" style="display: block;">
+        <div class="am-vertical-align">
+          <img src="imgs/panxi/quanbu@3x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle">全部</span>
+        </div>
+        <div class="am-vertical-align">
+          <img src="imgs/panxi/zongyi-@3x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle">演唱会</span>
+        </div>
+        <div class="am-vertical-align">
+          <img src="imgs/panxi/yinyue@3x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle">话剧</span>
+        </div>
+        <div class="am-vertical-align">
+          <img src="imgs/panxi/zhumeng-@3x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle">其他</span>
+        </div>
+      </div>
+      <!-- 众筹项目 -->
+      <div class="paihang marginCenter">
+        <!-- 数据列表 -->
+        <div class="am-list-news-bd">
+          <ul class="am-list">
+          </ul>
+        </div>
+        <!-- 加载更多 -->
+        <div class="am-list-news-ft am-margin-bottom more" style="display: block;">
+          <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;">点击查看更多 &raquo;</a>
+        </div>
+      </div>
+    </div>
+    <!-- 金蜂鸟奖 -->
+    <!-- <div id="award" class="award" style="display: none;">
+      <div class="am-slider am-slider-a1" id="banner">
+        <ul class="am-slides">
+        </ul>
+      </div>
+      <div class="am-list-news-ft am-margin-vertical more">
+        <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;">点击查看更多 &raquo;</a>
+      </div>
+    </div> -->
+    <!-- 推荐 -->
+    <div id="tuijian" style="display: none;">
+      <div class='am-list-news-ft am-margin-top more'>
+        <a href='javascript:void(0);' style='color:#ccc;'></a>
+      </div>
+    </div>
+    
+    <!-- 星动众筹，原人气众筹 -->
+    <div id="renqi" style="display: none;">
+      <!-- 加载更多 -->
+      <div class="am-list-news-ft am-margin-vertical more">
+        <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;"></a>
+      </div>
+    </div>
+    <!-- 梦想众筹 -->
+    <!-- <div id="dream">
+      <div class='am-list-news-ft am-margin-top more'>
+        <a href='javascript:void(0);' style='color:#ccc;'></a>
+      </div>
+    </div> -->
+    <!-- 排行榜 -->
+    <div class="paihang" id="paihang">
+      <!-- 数据列表 -->
+      <div class="am-list-news-bd">
+        <ul class="am-list"></ul>
+      </div>
+      <!-- 加载更多 -->
+      <div class="am-list-news-ft am-margin-vertical more">
+        <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;">点击查看更多 &raquo;</a>
+      </div>
+    </div>
+    <div class="am-modal am-modal-alert" tabindex="-1" id="sendTip">
+      <div class="am-modal-dialog">
+        <div class="am-modal-bd" id="tipCont">
+        </div>
+        <div class="am-modal-footer">
+          <span class="am-modal-btn">确定</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--[if lt IE 9]>    
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>        
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>      
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/jquery.lazyload.js"></script>
+  <script src="js/fastclick.js"></script>
+  <script src="js/common.js"></script>
+  <!-- <script src="js/disabledMenu.js"></script> -->
+  <script src="js/index2.js"></script>
+</body>
+
+</html>

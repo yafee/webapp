@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫众筹平台">
+  <meta name="keywords" content="西瓜虫,众筹,西瓜虫众筹">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->         
+  <meta name="renderer" content="webkit">
+        
+  <!-- No Baidu Siteapp-->    
+  <meta http-equiv="Cache-Control" content="no-siteapp"/> 
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png"> 
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/modifyName.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+ 
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">
+      <a href="javascript:history.go(-1);">  
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>   
+      </a>
+    </div>
+    <h1 class="am-header-title">           
+      <span>修改昵称</span>               
+    </h1>       
+  </header>           
+
+  <div id="tipWrap"><div id="tip"></div></div>
+
+  <!-- 内容块 --> 
+  <div id="content">   
+    <input type="text" class="am-form-field marginCenter" placeholder="新昵称" id="userName">         
+    <button type="button" class="am-btn am-btn-block btn" id="btn" data-am-loading="{spinner: 'circle-o-notch', loadingText: '加载中...'}">确认修改</button>  
+  </div> 
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>   
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script> 
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->  
+<script src="assets/js/jquery.min.js"></script>      
+<!--<![endif]-->             
+<script src="assets/js/amazeui.min.js"></script>    
+<script src="js/common.js"></script>            
+<script type="text/javascript">          
+  $(function(){   
+    var userName = $('#userName'), 
+        btn = $('#btn'),    
+        user = JSON.parse(session.getItem('user')),
+        location = window.location, 
+        tipWrap = $('#tipWrap'),    
+        tip = '昵称只能输入中文、数字、字母或下划线！';
+
+    // 修改昵称                             
+    btn.on('click', function(){    
+      var _this = $(this);
+      _this.button('loading');               
+      if(!/^[a-zA-Z0-9_\u4e00-\u9fa5]+$/g.test(trim(userName.val()))){                
+        setTip(tip);
+        _this.button('reset');                                                
+      }else{              
+        $.post('/Info/updateUserName', { userName: userName.val(), userId: user.userId }, function(data) {
+          if (data.state == 'success') {
+            location.href = 'myInfo.html';               
+          } else {
+            alert(data.msg);
+            _this.button('reset');    
+          }
+        })
+      }        
+    }) 
+
+    // 设置提示
+    function setTip(tipStr) {
+      var str = '<div id="tip"></div>';
+      $('#tip').remove();
+      tipWrap[0].innerHTML = str;
+      tipShowHide($('#tip'), warning, tipStr);   
+    }
+  })           
+</script>  
+</body>
+</html>

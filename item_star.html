@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫众筹平台">
+  <meta name="keywords" content="西瓜虫,众筹,西瓜虫众筹">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png"> 
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  --> 
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/base.min.css">
+  <link rel="stylesheet" href="css/loading.min.css">
+  <link rel="stylesheet" href="css/item_star.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a   
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <div class="loadingWrap"><div class="loading"></div></div>
+
+  <!-- 页头 -->
+  <header data-am-widget="header" class="am-header am-header-default">
+    <div class="am-header-left am-header-nav back">   
+      <a href="index.html">     
+        <img class="am-header-icon-custom" src="imgs/public/fanhui@2x.png"/>
+      </a>
+    </div>
+    <h1 class="am-header-title">          
+      <span>项目介绍</span>                  
+    </h1>   
+  </header> 
+     
+  <!-- 内容块 -->
+  <div id="content" class="relative marginCenter"> 
+    <!-- 视频 -->
+    <img src="imgs/index/tupianjiazai-4@2x.png" class="am-img-responsive poster marginCenter">
+    <img src="imgs/index/shipin@2x.png" class="play absolute">
+    <div class='video absolute'></div>
+    <img src="" class="love absolute">
+    <!-- 点赞 -->
+    <img src="" class="block zan" id="zan">	
+    <div class="textCenter am-margin-bottom-xs">
+    	<span id="praiseNum"></span>人赞
+    </div>
+    <!-- 标签头 -->
+    <div class="tab marginCenter textCenter font15"> 
+      <div class="xiangqing inlineBlock am-vertical-align">
+        <img src="imgs/item/xiangqing_2@3x.png" class="am-vertical-align-middle" id="ximg">  
+        <span class="am-vertical-align-middle" id="xfont">详情</span>
+      </div>
+      <div class="pinglun inlineBlock am-vertical-align">
+        <img src="imgs/item/pinglun_1@3x.png" class="am-vertical-align-middle" id="pimg">
+        <span class="am-vertical-align-middle" id="pfont">评论</span>
+      </div>
+      <div class="shiyong inlineBlock am-vertical-align">
+        <img src="imgs/item/guize_2@3x.png" class="am-vertical-align-middle" id="simg">
+        <span class="am-vertical-align-middle" id="sfont">使用规则</span>
+      </div>  
+    </div>
+    <!-- 标签内容 -->
+    <div class="body">
+      <div class="xiangqing-content am-margin-left">
+        <span class="title am-text-lg"></span>
+        <div class="stars am-fr" id="stars"></div>
+        <!-- <div class="time am-text-sm am-vertical-align"> 
+          <img src="imgs/item/time@2x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle am-text-sm" id="startTime"></span>      
+        </div>
+        <div class="location am-text-sm am-vertical-align">
+          <img src="imgs/item/weizhi@2x.png" class="am-vertical-align-middle">
+          <span class="am-vertical-align-middle am-text-sm" id="address"></span>
+        </div> -->
+        <!-- <div class="loadWrap"><div class="cont"><div class="num"></div></div></div> -->
+        <!-- <div class="intro textCenter am-text-sm"> 
+          <div class="am-fl"><span data-success>已筹 </span><span id="successCount"></span></div>
+          <span>剩余 </span><span id="restDays"></span>
+          <span class="am-fr" id="dacheng"></span>
+        </div>
+        <div class="am-cf"></div>
+        <div class="intro2 textCenter am-text-xs"> 
+          <div class="am-fl"><span>目标 </span><span id="totalCount"></span></div>
+          <span>天数 </span><span id="totalDays"></span>
+          <span class="am-fr">已达</span> 
+        </div>  --> 
+      </div>
+      <div id="imgList"></div>
+      <img src="imgs/item/guize.png" class="am-img-responsive" id="guize">
+      <!-- 加载更多 -->  
+      <div class="am-list-news-ft am-margin-vertical more">
+        <a class="am-list-news-more" href="javascript:void(0);" style="color:#ccc;"></a>
+      </div> 
+    </div>
+  </div> 
+  <!-- 分享 -->
+  <div id="bottom">
+    <!-- <img src="imgs/item/fenxiang@2x.png" class="share absolute"> -->
+    <input type="text" placeholder="请输入评论...">
+    <!-- <button type="button" class="am-fr" id="support">支持1元</button> -->
+  </div>
+  <!-- <div id="fenxiang"></div> -->
+  <!-- 发送消息 -->
+  <div id="sendMsg" class="am-padding-sm textCenter"> 
+    <span class="cancel am-fl">取消</span>
+    <span class="totalNum am-text-sm">限116个字符</span> 
+    <span class="send am-fr">发送</span> 
+    <textarea rows="4" maxlength="116" class="text marginCenter"></textarea>
+  </div>
+  <div class="am-modal am-modal-alert" tabindex="-1" id="sendTip">
+    <div class="am-modal-dialog">
+      <div class="am-modal-bd" id="tipCont">
+      </div>
+      <div class="am-modal-footer">
+        <span class="am-modal-btn">确定</span>
+      </div>
+    </div>
+  </div>
+  
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script src="js/common.min.js"></script>
+<script src="js/item_star.min.js"></script>
+</body>
+</html>

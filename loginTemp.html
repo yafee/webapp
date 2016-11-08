@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>西瓜虫演出</title>
+  <meta charset="UTF-8" />
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/zhuge.js"></script>
+  <script type="text/javascript">
+  var session = window.sessionStorage,
+    location = window.location,
+    flag = getQueryString('flag'),
+    userId = getQueryString('userId'),
+    nickname = decodeURI(getQueryString('nickname')),
+    userName = decodeURI(getQueryString('userName')),
+    imgurl = getQueryString('imgurl'),
+    QQWXuserName = decodeURI(getQueryString('nickname'));
+  // 三方登录标记，flag='success'即三放登录成功
+  session.setItem('flag', flag);
+  session.setItem('userId', userId);
+  session.setItem('nickname', nickname);
+  session.setItem('imgurl', imgurl);
+  session.setItem('QQWXuserName', nickname);
+  session.setItem('userName', userName);
+  // 绑定手机标记，有userName即绑定过手机号
+  var name = userName ? userName : nickname;
+  zhuge.identify(userId, {
+    name: name,
+    avatar: imgurl
+  });
+  var which = getQueryString('which');
+  if (which.indexOf('gold') != -1) {
+    window.location.href = 'myGold.html?which=' + which;
+  } else if (which.indexOf('order') != -1) {
+    window.location.href = 'myOrder.html?which=' + which;
+  } else if (which.indexOf('item') != -1) {
+    window.location.href = 'item.html?dealId=' + getQueryString('dealId') + '&from=i';
+  } else if (which.indexOf('prize') != -1) {
+    window.location.href = 'prizeDraw.html';
+  } else if (which.indexOf('share') != -1) {
+    window.location.href = 'share.html';
+  } else if(which.indexOf('bird') != -1) {
+    window.location.href = 'goldBird.html';
+  }else if(which.indexOf('micro') != -1) {
+    window.location.href = 'microFilmDtl.html?dealId='+getQueryString('dealId');
+  } else {
+    window.location.href = 'index.html?which=' + which;
+  }
+  </script>
+</head>
+
+<body>
+  数据正在加载...
+</body>
+
+</html>

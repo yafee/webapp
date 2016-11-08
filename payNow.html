@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Set render engine for 360 browser --> 
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <title>支付</title>
+
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">  
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"> 
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/payNow.css">
+  <script src="js/zhuge.js"></script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->  
+       
+  <!-- 内容块 -->
+  <div class="content textCenter am-padding-top">
+    <div class="money am-margin-bottom-sm">
+      ¥<span id="price"></span>
+    </div>
+    <div class="receive font15 am-padding-vertical-sm am-padding-horizontal">
+      <span class="receive-left am-fl">收款方</span>
+      <span class="receive-right am-fr">江苏华瀚国际娱乐文化有限公司</span>
+      <div class="am-cf"></div>
+    </div>
+  </div>        
+  <button type="button" class="am-btn-block am-text-lg marginCenter" id="payNowBtn">立即支付</button>
+  <footer class="absolute am-text-xs textCenter am-hide">
+    支付宝安全由中国人民财产保险股份有限公司承保
+  </footer>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script> 
+<![endif]-->   
+    
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>   
+<!--<![endif]-->      
+<script src="assets/js/amazeui.min.js"></script> 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/getwxConfig.js"></script>
+<script src="js/disabledMenu.js"></script>
+<script src="js/payNow.js"></script>
+</body>
+</html>
