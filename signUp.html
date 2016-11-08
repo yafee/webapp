@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="西瓜虫娱乐">
+  <meta name="keywords" content="西瓜虫,娱乐,演唱会,话剧,西瓜虫娱乐">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <title>报名</title>
+  <link rel="icon" type="image/png" href="imgs/invite/logo@2x.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" type="text/css" href="css/signUp.css">
+</head>
+
+<body>
+  <div class="activityInfoItem">
+    <span class="infoTitle">
+      活动时间
+    </span>
+    <div class="infoBody">
+      2016年9月22日 周四
+    </div>
+  </div>
+  <div class="activityInfoItem">
+    <span class="infoTitle">
+      活动地址
+    </span>
+    <div class="infoBody">
+      鼓楼区人和街8号
+    </div>
+  </div>
+  <div class="activityInfoItem">
+    <span class="infoTitle">
+      报名费用
+    </span>
+    <div class="infoBody">
+      免费
+    </div>
+  </div>
+  <div class="activityInfoItem">
+    <span class="infoTitle">
+      报名信息
+    </span>
+    <select class="signUpNum" placeholder="请选择报名人数">
+      <option selected value=""></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <div class="am-input-group nickName">
+      <input type="text" class="am-form-field" placeholder="填写昵称">
+      <span class="am-input-group-label"><i class="am-icon-asterisk"></i></span>
+    </div>
+    <div class="am-input-group mobile">
+      <input type="text" class="am-form-field" placeholder="手机号">
+      <span class="am-input-group-label"><i class="am-icon-asterisk"></i></span>
+    </div>
+    <div class="signUp am-text-center">确认报名</div>
+  </div>
+  <!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script>
+  $(function() {
+    $('select').selected({
+      placeholder: '请选择报名人数'
+    });
+  });
+  </script>
+</body>
+
+</html>
