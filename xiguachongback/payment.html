@@ -1,0 +1,306 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> 付款管理 </title>
+    <meta name="description" content="付款管理页面">
+    <meta name="keywords" content="付款管理">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="css/self.css">
+    <link rel="stylesheet" href="css/amazeui.datatables.min.css">
+    <!--<link rel="stylesheet" href="css/jquery.dataTables.min.css">-->
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+
+<header class="am-topbar admin-header">
+    <div class="am-topbar-brand">
+        <!--<img src="images/logo.png" alt=""/>-->
+        <strong>西瓜虫</strong>
+        <small>后台管理系统</small>
+        <!--<img src="images/logo.png" alt=""/>-->
+    </div>
+
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="admin-user.html"><span class="am-icon-user"></span> 资料</a></li>
+                    <li><a href="setting.html"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="login.html"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list">
+
+                <li><a href="admin.html" class="am-cf"><span class="am-icon-users"></span> 管理员</a></li>
+
+                <!--用户管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#user-collapse-nav'}"><span class="am-icon-cog"></span>
+                        用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub " id="user-collapse-nav">
+                        <li><a href="user.html" class="am-cf">用户管理</a></li>
+                        <li><a href="consignee.html" class="am-cf">用户地址</a></li>
+                        <li><a href="message.html" class="am-cf">用户消息</a></li>
+                        <li><a href="refund.html" class="am-cf">用户退款</a></li>
+                    </ul>
+                </li>
+                <!--项目管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#item-collapse-nav'}"><span
+                            class="am-icon-heart"></span> 项目管理 <span
+                            class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub " id="item-collapse-nav">
+                        <li><a href="deal.html" class="am-cf">项目管理</a></li>
+                        <li><a href="cate.html" class="am-cf">项目类别</a></li>
+                        <li><a href="comment.html" class="am-cf">项目评论</a></li>
+                        <li><a href="focus_log.html" class="am-cf">项目关注</a></li>
+                        <li><a href="item_image.html" class="am-cf">项目图片</a></li>
+                        <li><a href="order.html" class="am-cf">项目订单</a></li>
+                        <li><a href="pay_log.html" class="am-cf">项目支付</a></li>
+                        <li><a href="support_log.html" class="am-cf">项目支持</a></li>
+                        <li><a href="price.html" class="am-cf">项目票价</a></li>
+                        <li><a href="nav.html" class="am-cf">项目导航</a></li>
+                        <li><a href="pxbb.html" class="am-cf">潘西播报</a></li>
+                        <li><a href="livehouse.html" class="am-cf">小型演出</a></li>
+                    </ul>
+                </li>
+                <!--付款管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#pay-collapse-nav'}"><span
+                            class="am-icon-paypal"></span> 付款管理<span
+                            class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="pay-collapse-nav">
+                        <li><a href="payment.html" class="am-cf am-active">付款管理</a></li>
+                        <li><a href="payment_notice.html" class="am-cf">付款注意</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="adv.html" class="am-cf"><span class="am-icon-home"></span> 广告管理</a></li>
+
+                <li><a href="video.html" class="am-cf"><span class="am-icon-video-camera"></span> 视频管理</a></li>
+
+                <!--权限管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#role-collapse-nav'}"><span
+                            class="am-icon-user-secret"></span> 权限管理<span
+                            class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub" id="role-collapse-nav">
+                        <li><a href="role.html" class="am-cf">权限管理</a></li>
+                        <li><a href="role_module.html" class="am-cf">权限类别</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="am-panel am-panel-default admin-sidebar-panel">
+                <div class="am-panel-bd">
+                    <p><span class="am-icon-bookmark"></span> 公告</p>
+
+                    <p>欢迎来到西瓜虫后台管理系统。—— 兆米</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="am-cf am-padding">
+            <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">付款管理</strong> /
+                <small>表格</small>
+            </div>
+        </div>
+        <div id="showpanel">
+            <div class="am-g">
+                <div class="am-u-sm-12 am-u-md-6">
+                    <div class="am-btn-toolbar">
+                        <div class="am-btn-group am-btn-group-md">
+                            <button id="Add" type="button" class="am-btn am-btn-default"><span
+                                    class="am-icon-plus"></span> 添加
+                            </button>
+                            <button id="Edit" type="button" class="am-btn am-btn-primary"><span
+                                    class="am-icon-edit"></span> 编辑
+                            </button>
+                            <button id="Delete" type="button" class="am-btn am-btn-danger"><span
+                                    class="am-icon-trash-o"></span> 删除
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-u-sm-12 am-u-md-3">
+                    <div class="am-form-group">
+                        <select data-am-selected="{btnSize: 'md'}">
+                            <option value="ID">ID</option>
+                            <option value="用户名">用户名</option>
+                            <option value="手机号">手机号</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="am-u-sm-12 am-u-md-3">
+                    <div class="am-input-group am-input-group-sm">
+                        <input type="text" class="am-form-field">
+                         <span class="am-input-group-btn">
+                           <button class="am-btn am-btn-default" type="button">查找</button>
+                         </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="am-g">
+                <div class="am-u-sm-12 am-scrollable-horizontal">
+                    <table class="am-table am-table-striped am-table-hover table-main am-table-bordered display"
+                           cellpadding="0" cellspacing="0" border="0" width="100%" id="paymentTable">
+
+                    </table>
+                    <hr/>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="am-g" style="display: none;" id="addpanel">
+            <div class="am-g">
+                <div class="am-u-md-10  am-u-md-offset-1 am-u-lg-10 am-u-lg-offset-1">
+                    <div class="am-panel am-panel-success">
+                        <div class="am-panel-hd">
+                            <h2 class="am-panel-title" id="changepanel">管理员添加</h2>
+                        </div>
+                        <form id="paymentform" method="post">
+                            <div id="validateform">
+                                <div class="am-panel-bd">
+                                    <div class="am-g">
+                                        <div class="am-u-md-5">
+                                            <div class="am-form-group am-hide ">
+                                                <label for="ID">ID</label><br/>
+                                                <input type="text" class="form-control " id="ID" name=""
+                                                       disabled="true">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="class_name">className</label><br/>
+                                                <input type="text" class="form-control" id="class_name" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="online_pay">在线支付</label><br/>
+                                                <input type="text" class="form-control" id="online_pay" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="name">名称</label><br/>
+                                                <input type="text" class="form-control" id="name" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="total_amount">总数</label><br/>
+                                                <input type="text-local" class="form-control" id="total_amount"
+                                                       name="">
+                                            </div>
+                                            <div class="am-form-group isornot">
+                                                <label>是否生效</label>&nbsp;&nbsp;&nbsp;
+                                                <label class="am-radio-inline">
+                                                    <input type="radio" name="" value="是" id="is_effect">是
+                                                </label>
+                                                <label class="am-radio-inline">
+                                                    <input type="radio" name="" value="否" id="isnot_effect">否
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <!--am-u-md-5 -->
+                                        <div class="am-u-md-1"></div>
+                                        <div class="am-u-md-5">
+
+                                            <div class="am-form-group">
+                                                <label for="description">描述</label><br/>
+                                                <textarea type="text" class="areaform-control" id="description" name=""></textarea>
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="config">结构</label><br/>
+                                                <input type="text" class="form-control" id="config" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="logo">商标</label><br/>
+                                                <input type="text" class="form-control" id="logo" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="sort">排序</label><br/>
+                                                <input type="text" class="form-control" id="sort" name="">
+                                            </div>
+                                        </div>
+                                        <!--am-u-md-5 -->
+                                    </div>
+                                </div>
+
+                                <div class="am-panel-footer">
+                                    <div class="am-g">
+                                        <div class="panel-footer-btn ">
+                                            <button type="button" class="am-btn am-btn-default" id="cancel">取消</button>
+                                            <button type="submit" class="am-btn am-btn-success" id="doit">创建</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--am-u-md-10-->
+            </div>
+        </div>
+
+    </div>
+    <!-- content end -->
+
+</div>
+<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
+   data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+<footer>
+    <hr>
+    <p class="am-padding-left">© CopyRight 2015，江苏兆米信息科技有限公司，All Rights Reserved. 苏ICP备15013612号</p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="js/amazeui.datatables.min.js"></script>
+<!--<script src="js/jquery.dataTables.min.js"></script>-->
+<script src="../assets/js/app.js"></script>
+
+
+<script async="async" charset="utf-8" src="js/pagejs/payment.js"></script>
+<script async="async" charset="utf-8" src="js/pagejs/common.js"></script>
+<script async="async" charset="utf-8" src="js/AddressUrl.js"></script>
+
+
+</body>
+</html>

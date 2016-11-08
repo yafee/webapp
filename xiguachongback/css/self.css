@@ -1,0 +1,111 @@
+/*添加*/
+
+.am-padding-left {
+  text-align: center;
+  /*左导航内容居中*/
+}
+
+.form-control {
+  width: 90%;
+  height: 3rem;
+}
+
+.am-group {
+  margin-left: 5%;
+}
+
+.am-u-md-5 {
+  margin-left: 5%;
+}
+
+.am-panel-title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.panel-footer-btn {
+  float: right;
+  margin-right: 5%;
+}
+
+#cancel {
+  font-size: 1.8rem;
+}
+
+#doit {
+  font-size: 1.8rem;
+}
+
+.am-selected-btn {
+  height: 3rem;
+}
+
+.admin-sidebar-list li a {
+  padding-left: 5.9rem;
+}
+
+table.dataTable thead > tr > th {
+  text-align: center;
+}
+
+table.dataTable tbody > tr > td {
+  text-align: center;
+}
+
+table thead > tr > th:first-child {
+  width: 15px;
+}
+
+thead,
+tbody {
+  overflow: hidden;
+  max-width: 300px;
+  height: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+body {
+  background: #ccc;
+}
+
+.admin-content {
+  min-height: 850px;
+}
+
+.am-datatable-footer {
+  padding-top: 20px;
+}
+
+.areaform-control {
+  overflow-y: auto;
+  width: 300px;
+  height: 120px;
+}
+
+.isornot {
+  margin-top: 50px;
+}
+
+
+/* user.html */
+
+#pagination label {
+  font-size: 1.4rem;
+}
+
+#pagination .jump {
+  margin-left: 1.5rem;
+}
+
+#pagination .jump input {
+  width: 5rem;
+  margin: 0 .5rem;
+  outline: none;
+}
+
+#pagination .jump button {
+  font-size: 1.5rem;
+  line-height: 100%;
+  height: 2.3rem;
+}

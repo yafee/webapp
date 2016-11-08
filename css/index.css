@@ -1,0 +1,167 @@
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #8ed2db;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #8ed2db;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #8ed2db;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #8ed2db;
+}
+
+
+/* base css */
+
+.kind span,
+.paihang-title {
+  color: #ccc;
+}
+
+#content,
+body{
+  background: #202020;
+}
+
+.kind img {
+  width: 2rem;
+}
+
+.kind {
+  width: 100%;
+}
+
+.kind div,
+.paihang ul,
+#quanbu .more {
+  cursor: pointer;
+}
+
+.kind,
+#quanbu .more {
+  display: none;
+}
+
+.kind div {
+  display: inline-block;
+}
+.paihang {
+  display: block;
+}
+
+
+/* 演出众筹 */
+/*9.13*/
+.price{
+  color: #29bbcf;
+  font-size: 1.6rem;
+}
+.price span{
+  color: #29bbcf;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.paihang-title{
+  color:#fff;
+  font-weight: bold;
+  margin-right: 0 !important;
+}
+.time,
+.address{
+  color: #e5e5e5;
+  font-size: 1.5rem;
+}
+.quanbu .paihang .paihang-title{
+  color:#fff;
+  font-weight: bold;
+  margin-right: 0 ;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+@media screen and (min-width: 350px){
+  .paihang .am-u-sm-8{
+    padding-left: 0;
+  }
+}
+
+
+.am-slider {
+  transition: opacity 500ms;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  /* 电脑 */
+  .quanbu .am-slides img{
+    height: 80rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* 平板 */
+  .quanbu .am-slides img {
+    height: 50rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* 手机 */
+  .quanbu .am-slides img{
+    height: 21rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* 小手机 */
+  .quanbu .am-slides img {
+    height: 20rem;
+  }
+}
+
+.kind {
+  height: 4rem;
+}
+
+.kind div {
+  width: 23.9%;
+  height: 100%;
+}
+
+.active-kind {
+  background: #1e1e1e;
+}
+
+.kind {
+  background: #111;
+}
+
+.kind img {
+  margin: 0 auto;
+}
+
+.kind > div:nth-of-type(1) span {
+  color: #1dbcd2;
+}
+
+/* 项目排行样式 */
+.paihang-poster {
+  min-width: 8rem;
+  min-height: 12rem;
+}
+
+.paihang-title{
+  font-size: 1.8rem;
+  margin-top: -.5rem;
+  margin-right: 2rem;
+}

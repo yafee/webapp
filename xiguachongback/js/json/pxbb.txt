@@ -1,0 +1,15 @@
+{
+"data":[
+    {
+     "pxbbId": "4",
+     "commentCount": " 21",
+     "detailImage": "http://www.xiguachong.cn/imgs/index/tanzhang_face.png",
+     "headImage": "http://www.xiguachong.cn/imgs/index/tanzhang_face.png",
+     "name": "沈娜",
+     "supportCount": "10",
+     "vedioFace": "57",
+     "vedioSource": "200",
+     "vedioWebSource": "200"
+   }
+]
+}

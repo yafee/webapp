@@ -1,0 +1,113 @@
+/* base css */
+.order-status,
+.restTime{
+	float: right;
+}
+.item,
+.more{
+	cursor: pointer;
+}
+.order-no,
+.order-no + span,
+.intro,.title{
+	color: #ccc;
+}
+
+body{
+	background: #202020;
+}
+.item,
+.cancelBtn,
+.payBtn{
+	background: rgba(0, 0, 0, .2);
+}
+.item{
+	width: 100%;
+	margin-bottom: .5rem;
+	padding: 1rem;
+}
+.intro{
+	margin: 1rem 0;
+}
+.order-status{
+	color: #1ebdd2;
+}
+.order-time span{
+	color: #888;
+}
+.order-time + span{
+	color: #666;
+}
+.restTime{
+	font-size: 1.4rem;
+}
+.am-divider{
+	margin: .5rem 0;
+}
+/* 项目介绍 */
+.poster{
+	margin-left: -1rem;
+}
+.intro,.title{ 
+	line-height: 2rem;
+} 
+.time{
+	margin-bottom: .5rem;
+}
+.place span,
+.time span{
+	margin-left: 1rem;
+}
+.time img,
+.time span,
+.place img,
+.place span{
+	vertical-align: middle; 
+}
+.time img,
+.place img{ 
+	width: 2rem;
+} 
+.time span,
+.place span{
+	font-size: 1.5rem; 
+}
+.place span{
+	/*width: 56.3%;*/
+	width: 55.8%;
+}
+.time span,
+.place span{  
+	line-height: 100%;
+}
+@media screen and(min-width: 375px){
+	.title{
+		margin: 1rem 0rem 3rem; 
+	}
+}  
+.title{
+	margin: .5rem 0 1.6rem;
+	font-size: 1.8rem;
+}  
+.time span,
+.place span{
+	color: #999;
+}
+/* 按钮 */
+.cancelBtn,
+.payBtn{
+	width: 8rem;
+	height: 3.5rem;
+	border: .1rem solid #b0b0b0;
+	border-radius: .2rem;
+	color: #b0b0b0;
+}
+.payBtn{
+	border-color: #1ebdd2;
+	color: #1ebdd2;
+}
+.am-modal-hd{
+	color: #333;
+}
+
+

@@ -1,0 +1,108 @@
+body{
+	background: #202020; 
+}
+.item,
+.poster,
+.info{
+	margin: 0 auto;
+}
+.item{
+	position: relative;   
+}   
+.poster{
+	width: 100%;
+	opacity: .6;
+}
+.info{
+	height: 4rem;
+	margin-left: .5rem; 
+	text-align: center;
+	opacity: .9;
+} 
+.info span{
+	line-height: 4rem;
+	margin-right: 1.5rem;
+	font-size: 1.5rem;
+	float: left;
+}  
+button{
+	border: none;
+	background: #2BC0D4;
+	height: 100%;
+	float: right;	  
+	font-size: 1.7rem;    
+}
+.finish{
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	width: 6.9rem;
+	height: 6.4rem;
+}
+@media screen and(min-width: 1025px){     /* 电脑 */
+	.finish{
+		width: 20rem;
+		height: 19.4rem;
+	}
+	.info{
+		height: 6rem;
+		margin-left: 2rem;
+	}
+	.info span{
+		line-height: 6rem;
+	}
+	button{
+		padding: 0 5rem;
+	}
+}
+@media screen and(max-width: 1024px){     /* pad */
+	.finish{
+		width: 10rem;
+		height: 9.4rem;
+	}
+	.info{
+		height: 5rem;
+		margin-left: 1rem;
+	}
+	.info span{
+		line-height: 5rem;
+	}
+	button{
+		padding: 0 3rem;
+	}
+}
+@media screen and(max-width: 600px){     /* 手机 */
+	.finish{
+		width: 6.9rem;
+		height: 6.4rem;
+	}
+	.info{
+		height: 4rem;
+		margin-left: 1rem;
+	}
+	.info span{
+		line-height: 4rem;
+	}
+	button{
+		padding: 0 1rem;
+	}
+}
+@media screen and(max-width: 320px){     /* 小手机 */
+	.info{
+		margin-left: .3rem;
+	}
+	.info span{
+		margin-right: .5rem;
+	}
+	button{
+		padding: 0 1.3rem;
+	}
+}
+.item,
+.more{
+	cursor: pointer;
+}
+.am-modal-bd{
+	color: #333;
+}
+

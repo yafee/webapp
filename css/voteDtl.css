@@ -1,0 +1,66 @@
+:root {
+  background: #fff;
+}
+
+* {
+  color: #333;
+}
+
+.content>img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.voteTime {
+  padding-left: 2%;
+}
+
+.movieList {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+.listLeft,.listRight{
+  width: 47%;
+  float: left; 
+}
+.listLeft{
+  margin: 0 2%;
+}
+.listRight{
+  margin-right: 2%;
+}
+.box {
+  width: 100%;
+  background: #f7f7f7;
+  /*border: 1px solid #E4E4E4;*/
+  margin-top: .5rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.movieName {
+  font-size: 1.35rem;
+  width: 100%;
+  padding:10px 10px 15px 12px;
+}
+
+.voteNum{
+  background: #f0f0f0;
+  height: 3rem;
+  line-height: 3rem;
+  color: #656569;
+  font-size: 1.35rem;
+  padding-right: 1rem;
+}
+.voteNum span{
+  color: #f7490c;
+  font-size: 1.6rem;
+  display: inline-block;
+  -webkit-transform: translateY(.15rem);
+  -ms-transform: translateY(.15rem);
+  -o-transform: translateY(.15rem);
+  transform: translateY(.15rem);
+}

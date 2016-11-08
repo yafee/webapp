@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> bootstrap Table</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-table.css"/>
+</head>
+<body>
+
+
+
+
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12 col-md-6">-->
+                <!--<div class="btn-toolbar">-->
+                    <!--<div class="btn-group btn-group-md">-->
+                        <!--<button id="adminAdd" type="button" class="btn btn-default">-->
+                            <!--<span class="icon-plus"></span> 添加-->
+                        <!--</button>-->
+                        <!--<button id="adminEdit" type="button" class="btn btn-primary">-->
+                            <!--<span class="icon-edit"></span> 编辑-->
+                        <!--</button>-->
+                        <!--<button id="adminDelete" type="button" class="btn btn-danger">-->
+                            <!--<span class="icon-trash-o"></span> 删除-->
+                        <!--</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="">-->
+                <!--<div class="form-group">-->
+                    <!--<select id="testSelect"  data-selected="{btnSize: 'sm'}">-->
+                        <!--<option value="ID">ID</option>-->
+                        <!--<option value="用户名">用户名</option>-->
+                        <!--<option value="权限ID">权限ID</option>-->
+                        <!--&lt;!&ndash;<option value="邮箱">邮箱</option>&ndash;&gt;-->
+                    <!--</select>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="">-->
+                <!--<div class="input-group input-group-sm">-->
+                    <!--<input type="text" class="form-field">-->
+                            <!--<span class="input-group-btn">-->
+                              <!--<button id="chazhao" class="btn btn-default" type="button">查找</button>-->
+                            <!--</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+                <table  data-toggle="table" id="adminTable" data-height="520" data-pagination="true" data-search="true"
+                       data-show-refresh="true" data-show-toggle="true" data-show-columns="true"   sort-order='asc'>
+                    <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    </thead>
+                </table>
+
+
+
+    <!--<div class="row" style="display: none;" id="addpanel">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-10  col-md-offset-1 col-lg-10 col-lg-offset-1">-->
+                <!--<div class="panel panel-success">-->
+                    <!--<div class="panel-heading">-->
+                        <!--<h2 class="panel-title" id="changepanel">项目添加</h2>-->
+                    <!--</div>-->
+                    <!--<form id="adminform" method="post">-->
+                        <!--<div id="validateform">-->
+                            <!--<div class="panel-body">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-5">-->
+                                        <!--<div class="form-group hide ">-->
+                                            <!--<label for="ID">管理员ID</label><br/>-->
+                                            <!--<input type="text" class="form-control " id="ID" name="id"-->
+                                                   <!--disabled="true">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="adm_name">管理员用户名</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="adm_name" name="admname">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="adm_password">密码</label><br/>-->
+                                            <!--<input type="password" class="form-control" id="adm_password" name="admpassword">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="is_effect">是否有效</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="is_effect" name="iseffect">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="is_delete">是否删除</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="is_delete" name="isdelete">-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;u-md-5 &ndash;&gt;-->
+                                    <!--<div class="col-md-1"></div>-->
+                                    <!--<div class="col-md-5">-->
+
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="role_id">权限ID</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="role_id" name="roleid">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="login_time">上次登录时间</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="login_time" name="logintime">-->
+                                        <!--</div>-->
+                                        <!--<div class="form-group">-->
+                                            <!--<label for="login_ip">上次登录IP</label><br/>-->
+                                            <!--<input type="text" class="form-control" id="login_ip" name="loginip">-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;u-md-5 &ndash;&gt;-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="panel-footer">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-1 col-md-offset-10 col-lg-offset-10 col-lg-1">-->
+                                        <!--<button type="button" class="btn btn-default" style="margin-top:5px" id="cancel">取消</button>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-1">-->
+                                        <!--<button type="submit" class="btn btn-success" style="margin-top:5px" id="doit">创建</button>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;u-md-10&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/data.js"></script>
+</body>
+</html>

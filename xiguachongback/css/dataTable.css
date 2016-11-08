@@ -1,0 +1,39 @@
+.dataTable {
+  font-family: 'SimHei';
+  overflow: scroll;
+}
+
+.dataTable table {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+}
+
+.dataTable table tr td {
+  overflow: auto;
+  max-width: 400px;
+  padding: 5px 3px;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.dataTable table thead tr td {
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+.dataTable table tbody input {
+  width: 98%;
+  height: 30px;
+}
+
+.dataTable button {
+  width: 45px;
+  height: 35px;
+  margin: 0 1px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #008fd5;
+}

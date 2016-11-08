@@ -1,0 +1,14 @@
+{
+"data":[
+    {
+     "priceId": "4",
+     "dealId": " 21",
+     "dealPrice": "100",
+     "limitNumber": "1",
+     "dealGiftImage": "http://www.xiguachong.cn/imgs/index/tanzhang_face.png",
+     "dealGift": "1. 内测场演出票1张： 限额专供《鬼吹灯》灯迷，有bug，有不满，你来挑剔你来改（内测具体时间/地点将在话题区公布。） 2. 朋友圈专用海报1张：专属姓名定制版电子海报",
+     "supportNumber": "57",
+     "totalNumber": "200"
+   }
+]
+}

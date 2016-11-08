@@ -1,0 +1,108 @@
+/*.time{
+	height: 4rem;
+}
+.time span{
+	line-height: 4rem;
+}*/
+/*.time,*/
+.tip-top{ 
+	background: #e1e1e1;
+}
+/*.time span,*/
+.tip-top,
+.tip-bottom span,
+.item-bottom > div span,
+.item-bottom .num{ 
+	color: #666;         
+}
+@media screen and(min-width: 414px){  
+	.tip-top{
+		text-align: center;
+		line-height: 4rem; 
+	}
+}      
+.item-top span,
+.item-top div{
+	vertical-align: middle;
+}
+/* 项目列表 */ 
+.item{
+	margin-bottom: .5rem;
+	background: rgba(0, 0, 0, .2);
+}
+#money{    
+	margin-left: 1.6rem;  
+	font-size: 3.2rem;
+	color: #2ebcd2;
+}  
+.item-top span:nth-child(2){
+	margin-left: 2.4rem;
+}
+.item-top span:not([id="money"]){
+	color: #999;
+	font-size: 1.4rem;
+}
+.line{
+	width: .1rem;
+	height: 1.8rem;
+	margin: 0 1rem;
+	border-left: .1rem dashed #999;
+} 
+.item-top + span{
+	margin: 0 1.6rem;
+	color: #ccc;
+}
+.item-cont{
+	padding: 1.6rem;
+}
+.item > div:nth-of-type(2) img:not([id="and"]){     /* 圆形图片 */
+	width: 6rem;
+}
+/*#and{       
+	width: 2rem;
+	height: 2rem;
+} */
+.tip-bottom{
+	padding: 0 1.6rem;
+	background: rgba(0, 0, 0, .2);
+}
+/*.tip-bottom,*/
+body{
+	background: #202020; 
+}  
+.item-bottom{   
+	height: 4.5rem; 
+}
+.item-bottom button{
+	float: right;
+	min-width: 9rem;
+	height: 4.5rem;
+	padding: 0 1rem; 
+	background: #2bbccf; 
+	border: none; 
+	text-align: center;
+	font-size: 1.8rem;
+	color: #fff; 
+} 
+.item-bottom > div{
+	height: 100%;
+}      
+.item-bottom > div img{
+	width: 3rem;
+	height: 3rem; 
+	cursor: pointer;
+	border: .1rem solid #666; 
+}
+.item-bottom .num{
+	border-top: .1rem solid #666; 
+	border-bottom: .1rem solid #666;
+	padding: 0rem 2rem;
+}
+.item-bottom button + div{
+	float: right;
+	margin-right: 2.4rem;
+}
+.am-modal-bd{
+	color: #333;
+}
+

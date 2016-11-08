@@ -1,0 +1,98 @@
+body{
+	background: #202020;
+}
+.sex{
+	background: #1e1e1e;
+}
+.active{
+	background: #020202;
+}
+.boy,
+.girl{
+	width: 50%;
+	padding: .7rem 0;
+	cursor: pointer;
+	text-align: center;
+}
+.boy img,
+.girl img{
+	margin-left: 1rem;
+}
+.girl span{
+	color: #cfcfcf;
+}
+.boy span{
+	color: #105FC5;
+}
+.panxi{
+	position: relative;
+	/*width: 30rem;*/
+	max-width: 37rem;
+	margin-bottom: 1rem;
+	margin: 0rem auto;
+}   
+.zhezhao,
+.play{     /* 播放按钮 */ 
+	position: absolute;
+	top: 0rem;  
+	left: 50%;      
+	transform: translateX(-50%);  
+	-webkit-transform: translateX(-50%);       
+}
+.poster,     /* 视频海报 */   
+.zhezhao{     /* 图片蒙板 */   
+	margin: 0rem auto;    
+}           
+.play{     /* 播放按钮 */  
+	display: none;  
+	width: 11rem;      
+	height: 11rem;                 
+	margin-top: 25%;   
+ 	z-index: 999;
+ 	cursor: pointer;
+}        
+.video{         
+	display: none;   
+	position: absolute;             
+	top: 0rem;          
+	left: 0rem; 
+} 
+.panxi div:nth-of-type(2){
+	padding: .5rem;
+	height: 4rem;
+}  
+.zan,
+.talk,
+.share{
+	width: 2.5rem;
+	height: 2.5rem;
+	cursor: pointer;
+} 
+.panxi .zan,
+.panxi .talk + span{
+	margin-left: 1rem;
+} 
+.panxi .zan + span{
+	color: #999;
+}
+.panxi .talk,
+.share{
+	margin-left: 2rem;
+}
+.header-icon{
+	border-radius: 50%;
+	right: 1rem;
+	cursor: pointer;
+	z-index: 9999999;
+}
+.boy img,
+.girl img,
+.header-icon{
+	width: 3rem;
+	height: 3rem;
+}
+.am-modal-bd{
+	color: #333;
+}
+
+  

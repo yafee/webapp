@@ -1,0 +1,32 @@
+div.deal_title {
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.deal_content {
+    float: left;
+    padding-left: 20px;
+    overflow: hidden;
+    /*word-wrap: break-word;*/
+    float:none
+}
+
+div.deal_modify {
+    float: right;
+    padding-right: 10px;
+}
+
+div.deal_content img {
+    margin-bottom: 10px;
+}
+
+#edit-thumbnail-list,#post-image-list,#detail-image-list {
+    padding-top: 20px;
+}
+
+button.thumbnail-delete {
+    position: absolute;
+    right:6px;
+    top:-6px;
+}

@@ -1,0 +1,41 @@
+body{
+	background: #202020;
+	padding-bottom: 1rem;
+}
+h3,
+h3 span{
+	font-size: 1.8rem;
+	color: #bbb;
+}
+.logo{
+	width: 6rem;
+	height: 6rem;
+	margin-top: 3rem;
+}
+.money{
+	width: 3rem;
+	margin-top: -.3rem;
+}
+.intro{
+	color: #bbb;
+	margin-bottom: 3rem;
+}
+.ios,
+.android{
+	cursor: pointer;
+	width: 41%;
+	height: 5rem;
+	background: #47cf6b;
+	border-radius: .5rem;
+	font-size: 1.8rem;
+	font-weight: 900;
+}
+.android{
+	background: #18bdb6;
+	margin-left: 1rem;
+}
+.ios img,
+.android img{
+	width: 3.5rem;
+	height: 3.5rem;
+}

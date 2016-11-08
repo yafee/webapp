@@ -1,0 +1,36 @@
+body,
+#content{
+	background: #202020;
+}
+#headerImg{
+	width: 9rem;
+	height: 9rem;
+	margin: 2rem 0 4rem;
+	cursor: pointer;
+	border-radius: 50%;
+}
+#headerImg:hover{
+	opacity: .7;
+}
+.user-info{
+	margin: 0 2rem;
+} 
+.user-info ul{
+	padding: 0;
+}
+.user-info li span:nth-of-type(2){ 
+	float: right;
+}
+.user-info ul li a{
+	display: block;
+	height: 5rem;
+	border-top: .1rem solid #999;
+	line-height: 5rem;
+}
+.user-info ul li:nth-of-type(4) a{
+	border-bottom: .1rem solid #999;
+}
+/* 右箭头 */
+.am-icon-angle-right{
+	color: #999;
+}

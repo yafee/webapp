@@ -1,0 +1,99 @@
+body{
+	background: #202020;
+	padding-bottom: 1rem;
+}
+h3,
+h3 span{
+	font-size: 1.8rem;
+	color: #bbb;
+}
+h3{
+	margin-top: 2rem;
+}
+.logo{
+	width: 6rem;
+	height: 6rem;
+	margin-top: 3rem;
+}
+.money{
+	width: 3rem;
+	margin-top: -.3rem;
+}
+.content > input,
+.validate input{  
+	background: #202020;
+	margin: 0rem auto;    
+	width: 80%;
+	max-width: 40rem;     
+	height: 3.5rem;     
+	margin-bottom: 1rem;  
+	border: .1rem solid #666;        
+	font-size: 1.5rem;
+	color: #fff;
+}
+.validate{   
+	font-size: 1.5rem;
+	width: 80%;      
+	max-width: 40rem;   
+	margin: 0rem auto;        
+}   
+.validate input{         
+	width: 58%;    
+	float: left;       
+}
+.validate input:focus,
+.content > input:focus{
+	background: #202020;
+	border-color: #666;  
+}
+.validate button{    
+	width: 42%;   
+	height: 3.5rem;
+	border: none;     
+	min-width: 7rem;
+	background: #666;
+	color: #ccc;
+}
+.validate button:active{
+	background: #888;
+}
+.btn,.btn:hover{  
+	background: #1dbcd2;
+	border: none;
+	width: 80%;
+	max-width: 40rem;
+	height: 4rem;
+	margin: 0rem auto;
+	margin-top: 2rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+.bottom{
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #666;
+}
+@media screen and(max-width: 320px){
+	.bottom{
+		width: 70%;
+	}
+}
+.fuwu{
+	margin: 0 0 3rem;
+	color: #1dbcd1;
+}
+.i{
+	width: 2rem;
+	height: 2rem;
+}
+.i + span{
+	color: #666;
+}
+.fuwu,
+#shuoming{
+	cursor: pointer;
+}
+
+
+
+

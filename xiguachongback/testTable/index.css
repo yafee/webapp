@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, p, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+}
+
+table tr td,
+table tr th {
+
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    padding: 5px 0px 5px 10px;
+}
+
+table thead > tr > th,
+table tbody > tr > td {
+    text-align: center;
+
+}
+
+table thead > tr > th:first-child,
+table tbody > tr > td:first-child {
+    width: 15px;
+    transform: translateX(-5px);
+
+}
+
+thead {
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a {
+    color: #000;
+}
+
+.dataTables_page {
+    float: right;
+}
+
+.dataTables_page li {
+    float: left;
+}
+
+.turnPage,
+.dataTables_page button {
+    /*background: #fff;*/
+    width: 45px;
+    height: 30px;
+    border: 1px solid #CCC;
+    margin-left: 3px;
+}
+
+.active {
+    background-color: #1dbcd2;
+}
+
+#datatable-footer {
+    margin-top: 15px
+}
+
+/*添加*/
+.form-control {
+    width: 90%;
+    height: 3rem
+}
+
+.am-group {
+    margin-left: 5%;
+}
+
+.am-u-md-5 {
+    margin-left: 5%;
+}
+
+#changepanel,
+.am-panel-title {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.panel-footer-btn {
+    float: right;
+    margin-right: 5%;
+}
+
+#cancel {
+    font-size: 1.8rem;
+}
+
+#doit {
+    font-size: 1.8rem;
+}
+
+.am-selected-btn {
+    height: 3rem
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}

@@ -1,0 +1,83 @@
+/*
+* @Author: yafee
+* @Date:   2016-11-07 10:42:24
+* @Last Modified by:   yafee
+* @Last Modified time: 2016-11-07 11:24:19
+*/
+
+
+/*轮番图*/
+
+.am-slider-default .am-control-nav {
+  bottom: 8px;
+}
+
+.am-slider-default .am-control-nav li a {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.am-slider-default .am-control-nav li a.am-active {
+  background-color: #fff;
+}
+
+.am-slider-default {
+  margin-bottom: 0;
+}
+
+
+/*导航标签*/
+
+.nav li {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+li.active {
+  color: #ff7234;
+  position: relative;
+}
+
+li.active::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: .2rem;
+  background: #ff7234;
+  left: 10%;
+  bottom: 0;
+}
+
+
+/*项目列表*/
+
+.item {
+  position: relative;
+}
+
+.itemBg {
+  width: 100%;
+}
+
+.itemLabel {
+  height: 3rem;
+  width: 100%;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.itemName {
+  padding-right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.itemSign {
+  padding:0 .5rem;
+  color: #f7b908;
+}

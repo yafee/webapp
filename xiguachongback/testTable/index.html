@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试表格</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="amazeui.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="amazeui.js"></script>
+</head>
+<body>
+<div id="showpanel">
+<div class="am-g">
+    <div class="am-u-sm-12 am-u-md-6">
+        <div class="am-btn-toolbar">
+            <div class="am-btn-group am-btn-group-md">
+                <button id="adminAdd" type="button" class="am-btn am-btn-default">
+                    <span class="am-icon-plus"></span> 添加
+                </button>
+                <button id="adminEdit" type="button" class="am-btn am-btn-primary ">
+                    <span class="am-icon-edit"></span> 编辑
+                </button>
+                <button disabled="true" id="adminDelete" type="button" class="am-btn am-btn-danger ">
+                    <span class="am-icon-trash-o"></span> 删除
+                </button>
+                <button  id="Delete" type="button" class="am-btn am-btn-danger ">
+                <span class="am-icon-trash-o"></span> remove删除
+            </button>
+            </div>
+        </div>
+    </div>
+    <div class="am-u-sm-12 am-u-md-3">
+        <div class="am-form-group">
+            <select id="testSelect">
+                <option value="ID">ID</option>
+                <option value="用户名">用户名</option>
+                <option value="权限ID">权限ID</option>
+                <!--<option value="邮箱">邮箱</option>-->
+            </select>
+        </div>
+    </div>
+    <div class="am-u-sm-12 am-u-md-3">
+        <div class="am-input-group am-input-group-sm">
+            <input id="searchbox" type="text" class="am-form-field">
+            <span class="am-input-group-btn">
+                <button id="chazhao" class="am-btn am-btn-default" type="button">查找</button>
+            </span>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="am-g ">
+        <div class="am-u-sm-6">
+            <div class="am-form-group" id="adminTable_length"><label>显示
+                <select id="select_length" name="dataTable_length"  class="am-form-select am-input-sm">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> 项结果</label></div>
+        </div>
+        <div class="am-u-sm-6">
+            <div id="adminTable_filter" class="dataTables_filter am-datatable-filter">
+                <!--<label>搜索：-->
+                <!--<input type="search" class="am-form-field am-input-sm" aria-controls="adminTable">-->
+                <!--</label>-->
+            </div>
+        </div>
+    </div>
+
+    <table id="adminTable" cellpadding="0" class="am-table-bordered">
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="checkAll"></th>
+            <th>管理员ID</th>
+            <th>管理员用户名</th>
+            <th>密码</th>
+            <th>是否生效</th>
+            <th>是否删除</th>
+            <th>权限ID</th>
+            <th>上次登录时间</th>
+            <th>上次登录IP</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="am-g datatable-footer" id="datatable-footer">
+        <div class="am-u-sm-4">
+            <div class="dataTables_info" id="adminTable_info" >
+                <span>显示第</span>
+                <span class="page-start">0</span>
+                <span>至</span>
+                <span class="page-end">8</span>
+                <span>项结果,</span>
+                <span>共</span>
+                <span class="page-total">57</span>
+                <span>项</span>
+            </div>
+        </div>
+        <div class="am-u-sm-8">
+            <div class='dataTable'></div>
+            <a id="btn0"></a>
+            <input id="pageSize" type="text" size="1" maxlength="2" value="getDefaultValue()"/><a> 条 </a> <a href="#" id="pageSizeSet">设置</a>
+            <a id="sjzl"></a>
+            <a  href="#" id="btn1">首页</a>
+            <a  href="#" id="btn2">上页</a>
+            <a  href="#" id="btn3">下页</a>
+            <a  href="#" id="btn4">尾页</a>
+            <a>转到 </a>
+            <input id="changePage" type="text" size="1" maxlength="4"/>
+            <a>页 </a>
+            <a  href="#" id="btn5">跳转</a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="am-g" style="display: none;" id="addpanel">
+    <div class="am-g">
+        <div class="am-u-md-10  am-u-md-offset-1 am-u-lg-10 am-u-lg-offset-1">
+            <div class="am-panel am-panel-success">
+                <div class="am-panel-hd">
+                    <h2 class="am-panel-title" id="changepanel">管理员添加</h2>
+                </div>
+                <form id="adminform" method="post">
+                    <div id="validateform">
+                        <div class="am-panel-bd">
+                            <div class="am-g">
+                                <div class="am-u-md-5">
+                                    <div class="am-form-group am-hide ">
+                                        <label for="ID">管理员ID</label><br/>
+                                        <input type="text" class="form-control " id="ID" name=""
+                                               disabled="true">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="adm_name">管理员用户名 </label><br/>
+                                        <input type="text" class="form-control" id="adm_name" name="">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="adm_password">密码</label><br/>
+                                        <input disabled="disabled" type="password" class="form-control" id="adm_password" name="">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="is_effect">是否有效</label><br/>
+                                        <input type="text" class="form-control" id="is_effect" name="">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="is_delete">是否删除</label><br/>
+                                        <input type="text" class="form-control" id="is_delete" name="">
+                                    </div>
+                                </div>
+                                <!--am-u-md-5 -->
+                                <div class="am-u-md-1"></div>
+                                <div class="am-u-md-5">
+
+                                    <div class="am-form-group">
+                                        <label for="role_id">权限ID</label><br/>
+                                        <input type="text" class="form-control" id="role_id" name="">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="login_time">上次登录时间</label><br/>
+                                        <input type="datetime-local" class="form-control" id="login_time" name="">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="login_ip">上次登录IP</label><br/>
+                                        <input type="text" class="form-control" id="login_ip" name="">
+                                    </div>
+                                </div>
+                                <!--am-u-md-5 -->
+                            </div>
+                        </div>
+
+                        <div class="am-panel-footer">
+                            <div class="am-g">
+                                <div class="panel-footer-btn ">
+                                    <button type="button" class="am-btn am-btn-default" id="cancel">取消</button>
+                                    <button type="submit" class="am-btn am-btn-success" id="doit">创建</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--am-u-md-10-->
+    </div>
+</div>
+
+<script  src="index.js"></script>
+<script  src="fenye.js"></script>
+</body>
+</html>

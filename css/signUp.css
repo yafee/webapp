@@ -1,0 +1,95 @@
+body,
+div,
+input,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 1rem;
+  background: #f9f9f9;
+}
+
+.infoTitle {
+  position: relative;
+  padding-left: .8rem;
+  font-size: 1.6rem;
+  color: #ff7234;
+  display: block;
+  margin: 1rem .4rem;
+}
+
+.infoTitle::before {
+  content: '';
+  width: .3rem;
+  height: 40%;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background: #ff7234;
+}
+
+.infoBody {
+  background: #fff;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  color: #666;
+  font-size: 1.5rem;
+  padding-left: .7rem;
+}
+
+.am-selected {
+  width: 100%;
+}
+
+.am-selected,
+.nickName,
+.mobile {
+  margin-bottom: .5rem;
+}
+
+.am-selected-btn.am-btn-default {
+  height: 4.5rem;
+  background: #fff;
+  border: none;
+  color: #999999;
+}
+
+.am-icon-caret-down:before {
+  -webkit-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  -o-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem);
+}
+
+.am-active .am-btn-default.am-dropdown-toggle,
+.am-btn-default.am-active,
+.am-btn-default:active,
+.am-input-group-label {
+  background: #fff;
+}
+
+.am-input-group-label,
+.am-form-field {
+  border: none;
+}
+
+.am-input-group-label {
+  color: #ff7234;
+}
+
+.am-input-group .am-form-field {
+  height: 4.5rem;
+}
+
+.signUp {
+  background: #ff7234;
+  color: #fff;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.6rem;
+  border-radius: .3rem;
+  margin: 2.8rem 0;
+}

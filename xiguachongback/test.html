@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> 测试 </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, cate-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="css/self.css">
+    <link rel="stylesheet" href="css/amazeui.datatables.min.css">
+    <!--<link rel="stylesheet" href="css/jquery.dataTables.min.css">-->
+
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+
+<header class="am-topbar admin-header">
+    <div class="am-topbar-brand">
+        <!--<img src="images/logo.png" alt=""/>-->
+        <strong>西瓜虫</strong>
+        <small>后台管理系统</small>
+        <!--<img src="images/logo.png" alt=""/>-->
+    </div>
+
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="admin-user.html"><span class="am-icon-user"></span> 资料</a></li>
+                    <li><a href="setting.html"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="login.html"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list">
+
+                <li><a href="admin.html" class="am-cf am-active"><span class="am-icon-users"></span> 管理员</a></li>
+
+                <!--用户管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#user-collapse-nav'}"><span class="am-icon-cog"></span> 用户管理</a>
+                    <ul class="am-list am-collapse admin-sidebar-sub " id="user-collapse-nav">
+                        <li><a href="user.html" class="am-cf">用户管理</a></li>
+                        <li><a href="consignee.html" class="am-cf">用户地址</a></li>
+                        <li><a href="message.html" class="am-cf">用户消息</a></li>
+                        <li><a href="refund.html" class="am-cf">用户退款</a></li>
+                    </ul>
+                </li>
+                <!--项目管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#item-collapse-nav'}"><span class="am-icon-heart"></span> 项目管理</a>
+                    <ul class="am-list am-collapse admin-sidebar-sub " id="item-collapse-nav">
+                        <li><a href="deal.html" class="am-cf">项目管理</a></li>
+                        <li><a href="cate.html" class="am-cf">项目类别</a></li>
+                        <li><a href="comment.html" class="am-cf">项目评论</a></li>
+                        <li><a href="focus_log.html" class="am-cf">项目关注</a></li>
+                        <li><a href="item_image.html" class="am-cf">项目图片</a></li>
+                        <li><a href="order.html" class="am-cf">项目订单</a></li>
+                        <li><a href="pay_log.html" class="am-cf">项目支付</a></li>
+                        <li><a href="support_log.html" class="am-cf">项目支持</a></li>
+                    </ul>
+                </li>
+                <!--付款管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#pay-collapse-nav'}"><span class="am-icon-paypal"></span> 付款管理</a>
+                    <ul class="am-list am-collapse admin-sidebar-sub " id="pay-collapse-nav">
+                        <li><a href="payment.html" class="am-cf">付款管理</a></li>
+                        <li><a href="payment_notice.html" class="am-cf">付款注意</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="adv.html" class="am-cf"><span class="am-icon-home"></span> 广告管理</a></li>
+
+                <li><a href="video.html" class="am-cf"><span class="am-icon-video-camera"></span> 视频管理</a></li>
+
+                <!--权限管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#role-collapse-nav'}"><span class="am-icon-user-secret"></span> 权限管理</a>
+                    <ul class="am-list am-collapse admin-sidebar-sub" id="role-collapse-nav">
+                        <li><a href="role.html" class="am-cf">权限管理</a></li>
+                        <li><a href="role_module.html" class="am-cf">权限类别</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="am-panel am-panel-default admin-sidebar-panel">
+                <div class="am-panel-bd">
+                    <p><span class="am-icon-bookmark"></span> 公告</p>
+
+                    <p>欢迎来到西瓜虫后台管理系统。—— 兆米</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="am-cf am-padding">
+            <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">管理员</strong> / <small>表格</small></div>
+        </div>
+        <div id="showpanel">
+            <div class="am-g">
+                <div class="am-u-sm-12 am-u-md-6">
+                    <div class="am-btn-toolbar">
+                        <div class="am-btn-group am-btn-group-md">
+                            <button id="adminAdd" type="button" class="am-btn am-btn-default">
+                                <span class="am-icon-plus"></span> 添加
+                            </button>
+                            <button id="adminEdit" type="button" class="am-btn am-btn-primary">
+                                <span class="am-icon-edit"></span> 编辑
+                            </button>
+                            <button id="adminDelete" type="button" class="am-btn am-btn-danger">
+                                <span class="am-icon-trash-o"></span> 删除
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-u-sm-12 am-u-md-3">
+                    <div class="am-form-group">
+                        <select id="testSelect"  data-am-selected="{btnSize: 'sm'}">
+                            <option value="ID">ID</option>
+                            <option value="用户名">用户名</option>
+                            <option value="权限ID">权限ID</option>
+                            <!--<option value="邮箱">邮箱</option>-->
+                        </select>
+                    </div>
+                </div>
+                <div class="am-u-sm-12 am-u-md-3">
+                    <div class="am-input-group am-input-group-sm">
+                        <input type="text" class="am-form-field">
+                            <span class="am-input-group-btn">
+                              <button id="chazhao" class="am-btn am-btn-default" type="button">查找</button>
+                            </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="am-g" >
+                <div class="am-u-sm-12 am-scrollable-horizontal">
+                    <table class="am-table am-table-striped am-table-bordered am-table-hover  display" cellspacing="0" width="100%" id="adminTable">
+                        <thead>
+                        <tr>
+                            <th><input type="checkbox" id="checkAll"></th>
+                            <th>管理员ID</th>
+                            <th>管理员用户名</th>
+                            <th>密码</th>
+                            <th>是否有效</th>
+                            <th>是否删除</th>
+                            <th>权限ID</th>
+                            <th>上次登录时间</th>
+                            <th>上次登录IP</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <div class="am-g" style="display: none;" id="addpanel">
+            <div class="am-g">
+                <div class="am-u-md-10  am-u-md-offset-1 am-u-lg-10 am-u-lg-offset-1">
+                    <div class="am-panel am-panel-success">
+                        <div class="am-panel-hd">
+                            <h2 class="am-panel-title" id="changepanel">项目添加</h2>
+                        </div>
+                        <form id="adminform" method="post">
+                            <div id="validateform">
+                                <div class="am-panel-bd">
+                                    <div class="am-g">
+                                        <div class="am-u-md-5">
+                                            <div class="am-form-group am-hide ">
+                                                <label for="ID">管理员ID</label><br/>
+                                                <input type="text" class="form-control " id="ID" name=""
+                                                       disabled="true">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="adm_name">管理员用户名</label><br/>
+                                                <input type="text" class="form-control" id="adm_name" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="adm_password">密码</label><br/>
+                                                <input type="password" class="form-control" id="adm_password" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="is_effect">是否有效</label><br/>
+                                                <input type="number" class="form-control" id="is_effect" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="is_delete">是否删除</label><br/>
+                                                <input type="number" class="form-control" id="is_delete" name="">
+                                            </div>
+                                        </div>
+                                        <!--am-u-md-5 -->
+                                        <div class="am-u-md-1"></div>
+                                        <div class="am-u-md-5">
+
+                                            <div class="am-form-group">
+                                                <label for="role_id">权限ID</label><br/>
+                                                <input type="text" class="form-control" id="role_id" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="login_time">上次登录时间</label><br/>
+                                                <input type="text" class="form-control" id="login_time" name="">
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="login_ip">上次登录IP</label><br/>
+                                                <input type="text" class="form-control" id="login_ip" name="">
+                                            </div>
+                                        </div>
+                                        <!--am-u-md-5 -->
+                                    </div>
+                                </div>
+
+                                <div class="am-panel-footer">
+                                    <div class="am-g">
+                                        <div class="panel-footer-btn ">
+                                            <button type="button" class="am-btn am-btn-default" id="cancel">取消</button>
+                                            <button type="submit" class="am-btn am-btn-success" id="doit">创建</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--am-u-md-10-->
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+
+</div>
+<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
+   data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+<footer>
+    <hr>
+    <p class="am-padding-left">© CopyRight 2015，江苏兆米信息科技有限公司，All Rights Reserved. 苏ICP备15013612号</p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/amazeui.datatables.js"></script>
+
+<script src="../assets/js/app.js"></script>
+
+<script async="async" charset="utf-8" src="js/pagejs/test.js"></script>
+
+</body>
+</html>
+

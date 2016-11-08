@@ -1,0 +1,272 @@
+:root,
+body {
+  background: #f0f0f0;
+  width: 100%;
+}
+a:visited,
+a:focus,
+a:hover{
+  color:#333;
+}
+.content {
+  margin-bottom: 5.5rem;
+}
+.fixed{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.video,
+.poster,
+.play {
+  width: 100%;
+}
+
+.playBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.curTicket {
+  width: 14rem;
+  background: #1DBCD2;
+  border-radius: .5rem;
+  margin: 1rem auto;
+}
+
+.voteNum {
+  font-size: 2.5rem;
+}
+.movieDtl>img{
+  width: 100%;
+}
+
+.movieName{
+  color: #333;
+  font-size: 1.8rem;
+}
+.moviePeople{
+  padding: .5rem .8rem;
+  font-size: 1.4rem;
+}
+.description,
+.actorList{
+  color: #333;
+}
+.description{
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+}
+.moviePeople td{
+  color: #333;
+}
+.moviePeople::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-left: .1rem solid #ccc;
+  border-top: .1rem solid #ccc;
+}
+.moviePeople::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-right: .1rem solid #ccc;
+  border-bottom: .1rem solid #ccc;
+}
+
+/*投票弹出框*/
+
+/*.voteTitle {
+  background: #1DBCD2;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-box-shadow: 0 0.3rem 0 #20A5B8;
+  box-shadow: 0 0.3rem 0 #20A5B8;
+}*/
+
+/*.voteBody {
+  width: 23rem;
+  background: #F1FAFB;
+  color: #058495;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}*/
+
+/*#voteModal button {
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.cancelVote {
+  background: #fff;
+  color: #ebeced;
+}
+
+.confirmVote {
+  background: #2CBCD0;
+  color: #fff;
+}*/
+
+
+/*评论区begin*/
+
+.commentPlace {
+  background: #fff;
+}
+
+.commentPlace .am-g {
+  padding: .5rem .8rem;
+  border-bottom: .1rem solid #e5e5e5;
+}
+
+.commentTitle span,
+.commentTitle div {
+  color: #666;
+  font-size: 2rem;
+}
+
+.commentBody {
+  width: 96%;
+  margin: 0 2%;
+  max-height: 32rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.commentItem {
+  display: inline-block;
+  width: 100%;
+  padding: .5rem 0 1rem;
+  border-bottom: .1rem solid #e5e5e5;
+}
+
+.commentItem>div {
+  float: left;
+}
+
+.userImg {
+  width: 20%;
+}
+
+.commentContent {
+  width: 80%;
+}
+
+.name,
+.time {
+  color: #999;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.time {
+  font-size: 1.4rem;
+}
+
+.comments {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.commentBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3rem;
+}
+
+.more{
+  display: inline-block;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  color: #333;
+  text-align: center;
+}
+.am-input-group .am-form-field {
+  border: none;
+  height: 5rem;
+  border-top: .1rem solid #e5e5e5;
+}
+
+.am-input-group-label:last-child {
+  border: 0;
+}
+
+.am-input-group-label {
+  padding: 0;
+}
+
+#send {
+  color: #fff;
+  height: 5rem;
+  padding: 0 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/*评论区end*/
+
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border:none;
+  background: #fff;
+}
+
+.bottomBar>div {
+  float: left;
+  height: 5rem;
+  line-height: 5rem;
+  border:none;
+}
+.share,
+.comment {
+  background: #fff;
+  width: 30%;
+}
+.share span,
+.comment span {
+  color: #333;
+  font-size: 1.6rem;
+}
+span.shareNums,
+span.commentNums {
+  color: #ccc;
+}
+
+.vote {
+  width: 40%;
+}
+.enabledVote{
+  background: #d95e45;
+}
+.disabledVote{
+  background: #ccc;
+}

@@ -1,0 +1,30 @@
+input::-webkit-input-placeholder{color:#8ed2db}input:-moz-placeholder{color:#8ed2db}input::-moz-placeholder{color:#8ed2db}input:-ms-input-placeholder{color:#8ed2db}
+.user-title,.kind span,.paihang-title,.success-title{color:#ccc}#content,body,.am-offcanvas-bar{background:#202020}.left-nav img,.search img,.right-nav img,.kind img{width:2rem}
+.left-nav,.left-bottom,.right-nav,.tab+div,.vidPoster,.imgPoster,.intro,.kind,.renqiPoster,.renqi-mengban,.dreamPoster,.dream .zan{width:100%}.left-nav li,.search img,.right-nav li,.tab a,.tuijian>img:nth-child(2),.kind div,.dream,.paihang ul,#tuijian .more,#paihang .more,#quanbu .more,#renqi .more{cursor:pointer}
+.tuijian>img:nth-child(2),.video,.intro,.kind,#paihang .more,#quanbu .more,.renqi-mengban,.renqi span,.renqi button,#renqi .more,.dream .zan{display:none}
+.tab a,.intro img,.kind div{display:inline-block}.user-header,.renqi,.paihang{display:block}.user-header,.tuijian>img:nth-child(2),.tuijian img:last-child,.renqi-mengban{-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.search img,.tuijian>img:nth-child(2),.tuijian img:last-child,.video,.intro,.renqi-mengban,.renqi span:nth-of-type(1),.renqi span:nth-of-type(2),.renqi span:nth-of-type(3),.renqi button,.dream .zan,.paihang-support,.paihang-jiantou,.success-jiantou{position:absolute}
+.search,.tuijian,.renqi,.dream{position:relative}.logo{width:13rem}.left-nav{margin:1rem 0 0;padding:0}.left-nav li{line-height:4rem;float:left}.left-nav li a{padding:1rem 3rem}
+.left-nav li:nth-of-type(2)>a{padding-right:6rem}.left-nav li:nth-of-type(3)>a{padding-right:0rem}.left-nav li:nth-of-type(4)>a,.left-nav li:nth-of-type(5)>a{padding-right:4.5rem}
+.left-nav span{margin-left:.5rem}.left-bottom:nth-of-type(2){margin-top:2.5rem}.am-offcanvas-content:nth-child(1)>div:nth-of-type(1){margin:20% 0rem 1rem 0rem}
+.left-btn{width:120%;margin:80% 0rem 0rem -5%}.left-btn div{line-height:3rem;width:42%;height:3rem;border:.1rem solid #ccc;border-radius:.5rem}.left-btn div:first-child{margin-right:.3rem}
+.left-btn div:last-child{margin-left:.3rem}.search{width:70%;height:62%;-webkit-transform:translateY(40%);transform:translateY(40%);border-radius:2rem;background:#0ea0b7}
+.search img{top:50%;left:1.5rem;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.search input{float:left;width:66%;height:100%;margin-left:4rem;color:#8ed2db;border:0;background:#0ea0b7}
+.search input:focus{color:#fff}.menu-nav,.user-nav{padding:0 1rem}.menu-nav{margin-left:-.8rem}.user-nav{margin-right:-.8rem}.menu-nav:hover,.user-nav:hover{background:#0ea0b7}
+.user-header{width:7rem;height:7rem;margin-left:50%;border-radius:50%}.right-nav{margin:1rem 0 0;padding:0}.right-nav li{line-height:4rem;margin-top:.1rem}
+.right-nav li a{padding:1rem 3rem}.right-nav li img{margin-bottom:.3rem}.right-nav span{margin-left:.5rem}.right-nav li:nth-of-type(3) span:nth-of-type(2){margin-left:0rem}
+.right-nav li:last-child span{color:#20a7b9}.tab{height:4rem}.tab a{line-height:3rem;width:23%;margin-top:.5rem;color:#fff}.tab a:first-child{color:#1dbcd2;border-radius:2rem;background:#000}
+.tab+div{height:.2rem;background:#1dbcd2}.tab-active{color:#1dbcd2}.vidPoster,.imgPoster{margin:0 auto;opacity:.6}.tuijian>img:nth-child(2),.tuijian img:last-child{left:50%}
+.tuijian>img:nth-child(2){width:11rem}.video{top:0rem;left:0rem}.intro{font-size:1.5rem;line-height:5rem;bottom:0;left:0rem;text-align:center;color:#fff;background:linear-gradient(rgba(255,255,225,0),rgba(0,55,61,.7));background:-webkit-linear-gradient(rgba(255,255,225,0),rgba(0,55,61,.7))}
+.intro img{width:1.5rem;margin-right:.5rem}.intro span{font-size:1.4rem}.intro span:nth-of-type(1),.intro span:nth-of-type(2){margin-right:8%}.am-slider{transition:opacity 500ms;opacity:0}
+@media screen and (min-width:1025px){.tab{height:5rem}.tab a{line-height:4rem}.tuijian>img:nth-child(2){width:14rem}.quanbu .am-slides img,.vidPoster,.imgPoster,.renqiPoster,.renqi-mengban,.dreamPoster{height:80rem}
+}@media screen and (max-width:1024px){.intro{margin-top:30rem}.tuijian img:last-child{margin-top:15rem}.quanbu .am-slides img,.vidPoster,.imgPoster,.renqiPoster,.renqi-mengban,.dreamPoster{height:50rem}
+}@media screen and (max-width:600px){.quanbu .am-slides img,.vidPoster,.imgPoster,.renqiPoster,.renqi-mengban,.dreamPoster{height:21rem}}@media screen and (max-width:320px){.intro span:nth-of-type(1),.intro span:nth-of-type(2){margin-right:6%}
+.quanbu .am-slides img,.vidPoster,.imgPoster,.renqiPoster,.renqi-mengban,.dreamPoster{height:20rem}}.kind{height:4rem}.kind div{width:23.9%;height:100%}
+.active-kind{background:#1e1e1e}.kind,.normal-kind{background:#111}.kind img{margin:0 auto}.kind span{margin-left:.5rem}.kind>div:nth-of-type(1) span{color:#1dbcd2}
+.renqi,.renqi:hover{color:#fff}.renqi img,.renqi{margin:0 auto}.renqi-mengban{bottom:0rem;left:50%}.renqi span{left:2rem}.renqi span:nth-of-type(1){font-size:2rem;bottom:4rem}
+.renqi span:nth-of-type(2){font-size:1.5rem;bottom:1rem;left:2rem}.renqi button{font-size:1.8rem;right:1rem;bottom:1.5rem;padding:.5rem 2rem;border:0;border-radius:3rem;background:#1dbcd2}
+.dream .zan{bottom:0;height:3.5rem;padding:0 1rem;background:rgba(0,0,0,.6)}.dream .zan img{width:2.5rem}.am-modal-bd{color:#333}.paihang-poster,.success-poster{min-width:8rem;min-height:12rem}
+.paihang-title,.success-title{font-size:1.8rem;margin-top:-.5rem;margin-right:2rem}.paihang-content{font-size:1.2rem;margin-top:-.1rem;margin-bottom:.1rem}
+.paihang-content span{font-size:1.4rem;margin-right:1rem;color:#999}.paihang-star{width:1.2rem;margin-top:1.5rem}.paihang-support{font-size:1.8rem;right:1rem;bottom:-.5rem;margin-left:2.5rem;color:#1dbcd2}
+.paihang-jiantou,.success-jiantou{top:.3rem;right:.7rem;width:1.2rem}

@@ -1,0 +1,136 @@
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #e7e7e7;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e7e7e7;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e7e7e7;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #e7e7e7;
+}
+
+body {
+  background: #202020;
+}
+
+.panxi {
+  max-width: 37rem;
+}
+
+.zhezhao,
+#play {
+  top: 0rem;
+  left: 50%;
+  display: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#play {
+  z-index: 999;
+  width: 11rem;
+  height: 11rem;
+}
+
+.video {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: none;
+}
+
+.hot {
+  line-height: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  border-radius: 0 .3rem .3rem 0;
+  background: #1b6f7b;
+}
+
+.pinglun-content {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-left: -1.5rem;
+}
+
+.pinglun-content img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.more {
+  margin-bottom: 5rem;
+}
+
+#play,
+.more,
+.cancel,
+.send {
+  cursor: pointer;
+}
+
+.am-modal-bd {
+  color: #333;
+}
+
+.bottom,
+#sendMsg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottom {
+  height: 4rem;
+  padding: .5rem;
+  background: #e1e1e1;
+}
+
+#sendMsg {
+  z-index: 999;
+  display: none;
+  height: 16rem;
+  color: #202020;
+  background: #e2e2e2;
+}
+
+#sendMsg textarea {
+  width: 100%;
+  border: none;
+}
+
+.cancel {
+  color: #797979;
+}
+
+.totalNum {
+  color: #969696;
+}
+
+.send,
+.am-modal-btn,
+.btn {
+  color: #5fa7b7;
+}
+
+.msg {
+  width: 80%;
+  height: 100%;
+  padding: 0 1rem;
+  color: #202020;
+  border: none;
+}
+
+.btn {
+  width: 18%;
+}

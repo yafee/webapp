@@ -1,0 +1,81 @@
+body {
+  background: #F7F7F4;
+}
+
+.headerPic {
+  width: 100%;
+}
+
+.activityDtl {
+  padding: 1.5rem 1.5rem 0;
+  width: 100%;
+}
+
+.activityTitle {
+  font-size: 1.7;
+  margin-bottom: .5rem;
+  color: #333;
+}
+
+.activityNum {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.signUpBtn {
+  width: 100%;
+  border: .1rem solid #ff7234;
+  border-radius: .3rem;
+  background: #F8F7F4;
+  color: #ff7234;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+}
+
+.signUpBtn:focus {
+  outline: none;
+}
+
+.infoItem {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: .1rem solid #EEEEEB;
+}
+
+.infoTitle {
+  width: 32%;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.infoTitle>span,
+.infoBody {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.infoBody {
+  width: 68%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 1rem;
+  position: relative;
+}
+.iconLabel{
+  -webkit-transform: translateY(-.1rem);
+  -ms-transform: translateY(-.1rem);
+  -o-transform: translateY(-.1rem);
+  transform: translateY(-.1rem);
+}
+.angle-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.introduce{
+  
+}

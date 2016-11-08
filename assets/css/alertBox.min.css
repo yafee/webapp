@@ -1,0 +1,82 @@
+.alertBtn,
+.textCenter {
+  text-align: center
+}
+
+html,
+.cover {
+  height: 100%;
+}
+
+.cover {
+  position: absolute;
+  z-index: 8000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  background: #000;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.alertBox {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  width: 70%;
+  max-width: 600px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: .4rem
+}
+
+.alertText {
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+  border-radius: .4rem;
+  background: #1685a9
+}
+
+.alertBtn {
+  color: #000;
+  line-height: 1.5rem;
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-transition: transform .8s;
+  -o-transition: transform .8s;
+  transition: transform .8s;
+  border-radius: 50%;
+  background: #fff
+}
+
+.activeBtn {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.error {
+  background: #f20c00
+}
+
+.success {
+  background: #16a951
+}
+
+.warning {
+  background: #ffb61e
+}
+
+.info {
+  background: #1685a9
+}

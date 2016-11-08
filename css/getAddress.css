@@ -1,0 +1,86 @@
+html,body{
+	height: 100%;
+	background: #202020;
+}
+#content{
+	padding-bottom: 4.5rem; 
+}
+.address-card span:nth-of-type(2),
+.default,
+.trash{
+	cursor: pointer;
+}
+.address-card{
+	position: relative;
+	width: 100%;
+	background: rgba(0, 0, 0, .2); 
+	margin-bottom: 1rem; 
+	padding: 1rem; 
+	font-size: 1.7rem;
+}     
+.address-card span,
+.trash{    
+	color: #ccc; 
+}        
+.default img{     /* 单选框 */   
+	width: 2rem;       
+	height: 2rem;  
+}
+.am-icon-angle-right{
+	color: #999;
+}
+.address-card span:nth-of-type(2){     /* 电话 */
+	padding: 0 0 1rem 2rem;
+}
+.address-card span:nth-of-type(3){     /* 详细地址 */
+	display: block;
+	font-size: 1.4rem;   
+	margin-top: 1rem;
+}
+.default,
+.trash{
+	text-align: center;
+	margin-top: 2rem;
+}
+.trash{
+	width: 3rem;
+	line-height: 3rem;
+	font-size: 120%;
+}
+.default{ 
+	width: 11rem;
+	height: 3rem;
+}
+.default img{ 
+	margin-right: 1rem;
+}
+#addBtn{
+	display: none;
+}
+.am-modal-bd{
+	color: #333;
+}
+.btn,.btn:hover{   
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #1dbcd2; 
+	border: none;
+	height: 4.5rem; 
+	color: #fff;
+}
+.defTip{
+	display: none;
+	left: 50%;
+	bottom: 6rem;
+	width: 8.5rem;
+	padding: .5rem 0;
+	background: #4E4E4E;
+	text-align: center;
+	border-radius: 2rem;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+
+

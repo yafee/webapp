@@ -1,0 +1,40 @@
+:root{
+    background: #f5f5f5;
+  }
+  .questionList {
+    background: #f5f5f5;
+  }
+  
+  .questionItem {
+    margin-bottom: .5rem;
+    background: #fff;
+  }
+  
+  .questionTitle {
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: .1rem dashed #e5e5e5;
+  }
+  
+  .questionAnswer {
+    padding: 1rem 0;
+  }
+  
+  .questionIcon {
+    padding-right: .5rem;
+  }
+  
+  .questionContent {
+    font-size: 1.4rem;
+    color: #6a6a6a;
+  }
+  
+  .answerContent {
+    color: #3a3a3a;
+    font-size: 1.2rem;
+  }
+  
+  .answerContent,
+  .questionContent {
+    padding-left: 0;
+  }

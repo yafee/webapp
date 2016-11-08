@@ -1,0 +1,81 @@
+/* base css */
+.zan,
+.cancel,
+.send{
+	cursor: pointer;
+}
+.text,
+.am-modal-bd{
+	color: #333;
+}
+
+body{
+	background: #202020;
+}
+.poster{
+	width: 100%;
+}
+.zan{
+	width: 10rem;
+	margin: 1.5rem auto 1rem;
+}
+.bottom{
+	width: 90%;
+	height: 8rem;
+	padding: .5rem 0 0 1rem;
+	border: .1rem solid #1797A8;
+	color: #999;
+	border-radius: .3rem;
+}
+#sendMsg{
+	display: none;
+	position: fixed;
+	bottom: 0rem;
+	background: #E2E1E2;
+	width: 100%;
+	height: 4.5rem;
+	margin-left: 50%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+}
+#sendMsg{
+	height: 16rem;
+	background: #E2E2E2;
+}
+.cancel{
+	color: #797979;
+}
+.totalNum{
+	color: #969696;
+}
+.send,.am-modal-btn{
+	color: #5FA7B7;
+}
+.text{ 
+	width: 100%;
+	margin-top: 1rem;
+	border: none;
+}
+.pinglun-content img{
+	border-radius: 50%;
+}
+@media screen and (min-width: 1025px){      /* 电脑 */
+	.pinglun-content img{
+		width: 5rem;
+		height: 5rem;
+	}
+}
+@media screen and (max-width: 1024px){     /* pad */
+	.pinglun-content img{
+		width: 4rem;
+		height: 4rem;
+	}
+}
+@media screen and (max-width: 600px){     /* 手机 */
+	.pinglun-content img{
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+

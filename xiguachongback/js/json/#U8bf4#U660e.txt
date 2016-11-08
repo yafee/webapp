@@ -1,0 +1,60 @@
+1新增的表,看数据库,有以下几张:
+    (1)livehouse表(小型演出);
+    (2)pxbb表(潘西播报)
+    (3)deal_price表(票价)
+    (4)nav(导航)
+    (5)region_conf (地址管理)
+
+    新增的表加在哪里不确定,所以暂时没有加;
+
+    dashboard.html是模版,可下拉展开的带'>'标志
+
+
+
+   图片  视频的上传修改暂时没有与后台对接,只用type="text"做了获取值
+
+
+   有些字段不能修改的话,
+   不能修改的字段我认为是一些客观数据,比如一个项目的评论数之类的,添加项目是评论数字段直接放空,由前台用户操作产生数据.
+
+   使用:
+   <input type="hidden" /> 定义隐藏字段。隐藏字段对于用户是不可见的。隐藏字段通常会存储一个默认值，它们的值也可以由 JavaScript 进行修改。
+
+
+
+   deal项目表,comment项目评论表做增删改查
+
+   common.js 有几个公用的js
+
+
+   livehouse.html 中的表单属性 input 或textarea 使用maxlength属性规定文本区域的最大长度（以字符计）
+
+    图片字段:
+   render:function(data){ //显示小图片
+                   return '<img src="'+data+'" alt="false" height="50" width="50">'
+               }
+
+    描述性字段 如liveHouse的houseDescription字段,使用textarea class="areaform-control" :
+   "render": function ( data, type ) {     //字数超过20,只显示20字
+                   return type === 'display' && data.length > 20 ?
+                   '<span title="'+data+'">'+data.substr( 0, 20 )+'...</span>' :
+                       data;
+               }
+
+
+   "是否成功"之类的字段  页面html中  加class="isornot" 例子:
+   <div class="am-form-group isornot">
+          <label>是否成功</label>&nbsp;&nbsp;&nbsp;
+          <label class="am-radio-inline">
+              <input type="radio" name="" value="是" id="is_success">是
+          </label>
+          <label class="am-radio-inline">
+              <input type="radio" name="" value="否" id="isnot_success">否
+          </label>  </div>
+
+
+          字数控制: 在表单 input textarea 中加 maxlength="数字" 限制字数
+
+
+
+          common.js  放了几个公用的js

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<title>基于jQuery的CRUD表格</title>
+	<meta charset="UTF-8"/> 
+	<link rel="stylesheet" type="text/css" href="DataTable.css">
+</head>     
+<body>     
+
+	<div class='dataTable'></div>
+	<a id="btn0"></a>
+	<input id="pageSize" type="text" size="1" maxlength="2" value="getDefaultValue()"/><a> 条 </a> <a href="#" id="pageSizeSet">设置</a>
+	<a id="sjzl"></a>
+	<a  href="#" id="btn1">首页</a>
+	<a  href="#" id="btn2">上一页</a>
+	<a  href="#" id="btn3">下一页</a>
+	<a  href="#" id="btn4">尾页</a>
+	<a>转到 </a>
+	<input id="changePage" type="text" size="1" maxlength="4"/>
+	<a>页 </a>
+	<a  href="#" id="btn5">跳转</a>
+           
+<script src="jquery-1.11.3.min.js"></script>      
+<script src="DataTable.js"></script>                
+<script src="fenye.js"></script>
+<script type="text/javascript">
+	$(function(){  
+		new DataTable( 
+				$('.dataTable'),
+				['Id', '管理员姓名', '管理员密码', '是否生效', '是否删除', '权限Id', '登录时间', '登录Ip'],              
+				'http://www.xiguachong.cn/admin/query',
+				'get', 
+				{Id: 0, roleId: 0, admName: null, page: 1, limit: 5},   
+				['id', 'admName', 'admPassword', 'isEffect', 'isDelete', 'roleId', 'loginTime', 'loginIp']
+				
+		);             
+	})     
+</script>
+</body>       
+</html>

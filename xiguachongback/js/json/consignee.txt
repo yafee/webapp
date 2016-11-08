@@ -1,0 +1,49 @@
+{
+    "data":[
+    {
+         "id": "1",
+         "userId": "Tiger",
+         "mobile": "12345678952",
+         "province": "江苏",
+         "city": "南京",
+         "address": "雨花区什么小区9东二单元909",
+         "consignee": "西瓜虫",
+         "isDefault":"1",
+         "isEffect":"1"
+    },{
+         "id": "2",
+         "userId": "Tiger",
+         "mobile": "12345678952",
+         "province": "江苏",
+         "city": "南京",
+         "address": "雨花区什么小区9东二单元909",
+         "consignee": "西瓜虫",
+         "isDefault":"1",
+         "isEffect":"1"
+    },{
+         "id": "3",
+         "userId": "Tiger",
+         "mobile": "12345678952",
+         "province": "江苏",
+         "city": "南京",
+         "address": "雨花区什么小区9东二单元909",
+         "consignee": "西瓜虫",
+         "isDefault":"1",
+         "isEffect":"0"
+    },
+    {
+         "id": "1",
+         "userId": "Tiger",
+         "mobile": "12345678952",
+         "province": "上海",
+         "city": "南京",
+         "address": "南京大数据",
+         "consignee": "西瓜虫",
+         "isDefault":"1",
+         "isEffect":"1"
+
+    }
+
+  ]
+
+}

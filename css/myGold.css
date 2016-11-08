@@ -1,0 +1,109 @@
+/* base css */
+
+body,
+#content,
+.how {
+  background: #202020;
+}
+
+#curPoint,
+#totalPoints,
+.how {
+  display: none;
+}
+
+.am-icon-angle-right,
+#content > div:nth-of-type(2) span {
+  color: #999;
+}
+
+#content {
+  padding-bottom: 2rem;
+}
+
+#poster {
+  width: 100%;
+  opacity: .7;
+}
+
+.poster > span:nth-of-type(1) {
+  /* 当前积分 */
+  top: 3%;
+  left: 3%;
+}
+
+.poster > span:nth-of-type(2) {
+  /* 总积分数 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 5.3rem;
+}
+
+.how {
+  border-radius: 1.5rem 0 0 1.5rem;
+  bottom: 6%;
+  right: 0;
+  padding: .1rem 0 .1rem .5rem;
+}
+
+.how img:nth-of-type(1) {
+  /* 图表i */
+  width: 1.7rem;
+  margin-bottom: .1rem;
+}
+
+#content > div:nth-of-type(2) {
+  /* 积分明细标题层 */
+  margin: 1rem auto 1rem;
+}
+
+.line {
+  width: 37%;
+  height: .1rem;
+  display: inline-block;
+  margin-bottom: .3rem;
+  background: #3d3d3d;
+}
+
+#content > div:nth-of-type(2) span {
+  /* 积分明细 */
+  margin: 0rem .5rem;
+}
+
+.item {
+  width: 90%;
+  height: 6rem;
+  margin: 0rem auto;
+  border-bottom: .1rem solid #3d3d3d;
+  padding-top: 1rem;
+}
+
+.item span:nth-of-type(1) {
+  color: #ccc;
+  display: inline-block;
+  width: 92%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item span:nth-of-type(2) {
+  font-family: "Helvetica Neue", "Regular";
+}
+
+.item span:nth-of-type(2) {
+  font-size: 1.9rem;
+  float: right;
+  color: #1dbcd2;
+}
+
+.item span:nth-of-type(3) {
+  display: block;
+  font-size: 1.4rem;
+  color: #aaa;
+}

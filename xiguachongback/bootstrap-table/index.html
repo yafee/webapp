@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-table.css"/>
+</head>
+<body>
+<header>
+    <p>后台管理</p>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" ><i class="glyphicon glyphicon-user" data-toggle="tooltip" data-placement="bottom" title="管理中心"></i></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-cog" data-toggle="tooltip" data-placement="bottom" title="设置"></i></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-log-out" data-toggle="tooltip" data-placement="bottom" title="退出"></i></a></li>
+        </ul>
+    </div>
+
+</header>
+<!--侧边栏开始-->
+<div class="sidebar">
+    <div class="sidebar">
+        <div class="panel-group" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-primary coll" >
+                <div class="panel-heading s-head" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <h4 class="panel-title">
+                        <i class="glyphicon glyphicon-user" data-toggle="tooltip" data-placement="bottom" ></i> &nbsp;&nbsp;
+                        用户管理
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body l-nav" id="back_user">
+                        <div class="col-sm-12" style="color: #006dcc">后台用户管理</div>
+                    </div>
+                    <div class="panel-body l-nav" id="supervisorylevel">
+                        <div class="col-sm-12" style="color: #006dcc">管理员权限</div>
+                    </div>
+                    <div class="panel-body l-nav" id="health_user" >
+                        <div class="col-sm-12" style="color: #006dcc">健康用户管理</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--侧边栏结束-->
+
+<!--右侧开始-->
+<div class="maincontent">
+
+</div>
+<!--右侧结束-->
+<footer>
+    <hr>
+    <p class="">© CopyRight 2015，江苏兆米信息科技有限公司，All Rights Reserved. 苏ICP备15013612号</p>
+</footer>
+
+</div>
+
+
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+</body>
+</html>

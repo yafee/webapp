@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>西瓜虫演出</title>
+	<meta charset="UTF-8">   
+	<link rel="stylesheet" href="jquery.fullPage.css"> 
+	<link rel="stylesheet" href="index.css"> 
+	<script src="common.js"></script> 
+	<script type="text/javascript">    
+		if(browser.versions.mobile) window.location.href = "mindex.html"; 
+	</script>       
+</head>      
+<body>  
+	<div id="fullpage" class="container">    
+		<div class="section" id="section0">  
+			<div id="header">   
+				<img src="imgs/logo.png"> 
+				<ul> 
+					<li> 
+						<a href="##">首页</a>  
+					</li>     
+					<li>    
+						<a href="##">关于我们</a>   
+					</li>
+					<li> 
+						<a href="##">合作</a>
+					</li> 
+				</ul> 
+				<div style="clear: both;"></div>
+			</div>
+			<div class="main">   
+				<img src="imgs/phone.png">   
+				<span class="tit">西瓜虫</span>   
+				<span class="text1">你就能决定</span> 
+				<span class="text2">娱乐的风向标！</span>  
+				<div class="android">     
+					<a href="http://android.myapp.com/myapp/search.htm?kw=西瓜虫"> 
+						<img src="imgs/android.png">  
+						<span>下载</span>
+						<span>Android</span>
+					</a>
+				</div><br/>
+				<div class="ios">
+					<a href="https://itunes.apple.com/us/app/xi-gua-chong/id1067748186?l=zh&ls=1&mt=8">
+						<img src="imgs/apple.png">
+						<span>下载</span>
+						<span>iPhone</span>
+					</a> 
+				</div>
+			</div>
+		</div>    
+	 	<div class="section" id="section1">
+	 		<div class="main">
+				<span class="china">中国</span>
+				<span class="first">首家</span>      
+				<span class="cont">演出专业众筹互联网平台，覆盖全国各大</span>
+				<span class="city">城市</span>   
+				<img src="imgs/banner-2.png">     
+			</div>
+	 	</div>
+		<div class="section" id="section2"> 
+			<div class="main">
+				<span class="cont1">每场演出你就是股东，</span>
+				<span class="ticket">最低的票价</span>
+				<span class="cont2">重叠的收</span>
+				<span class="cont3">益，特殊的礼遇</span>  
+				<img src="imgs/banner-3.png"> 
+			</div>      
+		</div>
+		<div class="section" id="section3">
+			<div class="main">
+				<span class="show">城城有演出</span>
+				<span class="txt1">，月月有明星，我们就是你家门</span>
+				<span class="txt2">口的<span class="xgc">“西瓜虫”</span></span>
+				<img src="imgs/banner-4.png">
+			</div>
+		</div>  
+	</div> 
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.fullPage.js"></script> 
+	<script type="text/javascript">     
+		$(document).ready(function() { 
+			$('#fullpage').fullpage({ 
+				'verticalCentered': false,     
+        'css3': true,   
+        'navigation': true
+			});
+		});
+	</script>
+</body>
+</html>

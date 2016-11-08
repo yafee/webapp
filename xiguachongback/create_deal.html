@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title> 项目管理 </title>
+    <meta name="description" content="项目管理页面">
+    <meta name="keywords" content="项目管理">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="css/self.css">
+    <link rel="stylesheet" href="css/deal_detail.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fileinput.min.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+<header class="am-topbar admin-header">
+    <div class="am-topbar-brand">
+        <!--<img src="images/logo.png" alt=""/>-->
+        <strong>西瓜虫</strong>
+        <small>后台管理系统</small>
+        <!--<img src="images/logo.png" alt=""/>-->
+    </div>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <!-- <li><a href="admin-user.html"><span class="am-icon-user"></span> 资料</a></li> -->
+                    <!-- <li><a href="setting.html"><span class="am-icon-cog"></span> 设置</a></li> -->
+                    <li id="logoutBtn"><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+        </ul>
+        <div class="am-topbar-brand am-topbar-right" style="font-size: 15px;">欢迎您：<span id="u_name"></span></div>
+    </div>
+</header>
+<div class="am-cf admin-main">
+    <!-- sidebar start -->
+    <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+        <div class="am-offcanvas-bar admin-offcanvas-bar">
+            <ul class="am-list admin-sidebar-list">
+
+                <!-- <li ><a href="admin.html" class="am-cf"><span class="am-icon-users"></span> 管理员</a></li> -->
+
+                <!--用户管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#user-collapse-nav'}"> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub" id="user-collapse-nav">
+                        <li><a href="user.html" class="am-cf">用户资料</a></li>
+                        <li><a href="consignee.html" class="am-cf">用户地址</a></li>
+                        <li><a href="pay_log.html" class="am-cf">用户积分</a></li>
+                        <li><a href="support_log.html" class="am-cf">积分详情</a></li>
+                        <li><a href="comment.html" class="am-cf">用户评论</a></li>
+                        <li><a href="focus_log.html" class="am-cf">用户关注</a></li>
+                    </ul>
+                </li>
+                <!--演出管理-->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#item-collapse-nav'}"> 演出管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="item-collapse-nav">
+                        <li><a href="deal.html" class="am-cf">演出资料</a></li>
+                        <li><a href="cate.html" class="am-cf">演出类别</a></li>
+                        <li><a href="create_deal.html" class="am-cf am-active">新增演出</a></li>
+                        <li><a href="banner.html" class="am-cf">演出横幅</a></li>
+                    </ul>
+                </li>
+                <!-- 订单管理 -->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#order-collapse-nav'}"> 订单管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub" id="order-collapse-nav">
+                        <li><a href="order.html" class="am-cf">演出订单</a></li>
+                    </ul>
+                </li>
+                <!-- 新增微电影 -->
+                <li class="admin-parent">
+                    <a class="am-cf" data-am-collapse="{target: '#film-collapse-nav'}"> 金蜂鸟 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <ul class="am-list am-collapse admin-sidebar-sub" id="film-collapse-nav">
+                        <li><a href="create_film.html" class="am-cf">新增微电影</a></li>
+                        <li><a href="film_list.html" class="am-cf">微电影管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="am-panel am-panel-default admin-sidebar-panel">
+                <div class="am-panel-bd">
+                    <p><span class="am-icon-bookmark"></span> 公告</p>
+                    <p>欢迎来到西瓜虫后台管理系统。—— 兆米</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+    <!-- content start -->
+    <div class="admin-content">
+        <div class="am-cf am-padding">
+            <div class="am-fl am-cf">
+                <strong class="am-text-primary am-text-lg">
+                    演出管理 / 新增演出
+                </strong>
+            </div>
+        </div>
+        <div id="showpanel" class="am-cf am-padding">
+            <div>
+                <form class="am-form am-form-horizontal am-u-sm-7 am-g" id="create_deal_form">
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="deal_name">演出类别:</label>
+                        </div>
+                        <div class="deal_content">
+                            <select name="cateId">
+                                <option value="1">话剧</option>
+                                <option value="2">演唱会</option>
+                                <option value="3">其他</option>
+                                <option value="4">星动</option>
+                                <option value="5">男神</option>
+                                <option value="6">女神</option>
+                                <option value="7">梦想</option>
+                                <option value="8">蜂鸟</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="deal_name">演出名称:</label>
+                        </div>
+                        <div class="deal_content">
+                            <input type="text" id="deal_name" placeholder="请输入演出名称" required>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="deal_time">演出时间:</label>
+                        </div>
+                        <div class="deal_content">
+                            <input type="text" id="deal_time" required>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="deal_city">演出城市:</label>
+                        </div>
+                        <div class="deal_content">
+                            <input type="text" id="deal_city" placeholder="请输入演出城市" required>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="deal_address">演出场馆:</label>
+                        </div>
+                        <div class="deal_content">
+                            <input type="text" id="deal_address" placeholder="请输入演出场馆" required>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="deal_title">
+                            <label for="vide_web_source">视频地址:</label>
+                        </div>
+                        <div class="deal_content">
+                            <input type="text" id="vide_web_source" placeholder="请输入视频地址" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="am-cf am-u-sm-7">
+                <div class="am-form-group">
+                    <div class="deal_title">
+                        <label for="banner-vertical">演出封面:</label>
+                    </div>
+                    <div class="deal_content">
+                        <input type="file" id="banner-vertical" accept="image/png,image/jpg,image/jpeg">
+                        <button type="button" class="am-btn am-btn-primary am-fr" id="banner-vertical-upload-btn" disabled="disabled">上传</button>
+                    </div>
+                </div>
+                <div class="am-form-group">
+                    <div class="deal_title">
+                        <label for="deal-banner">演出封面(横图):</label>
+                    </div>
+                    <div class="deal_content">
+                        <input type="file" id="deal-banner" accept="image/png,image/jpg,image/jpeg">
+                        <button type="button" class="am-btn am-btn-primary am-fr" id="deal-banner-upload-btn" disabled="disabled">上传</button>
+                    </div>
+                </div>
+                <div class="am-form-group">
+                    <div class="deal_title">
+                        <label for="video-web-source">视频封面:</label>
+                    </div>
+                    <div class="deal_content">
+                        <input type="file" id="video-web-source" accept="image/png,image/jpg,image/jpeg">
+                        <button type="button" class="am-btn am-btn-primary am-fr" id="video-web-source-upload-btn" disabled="disabled">上传</button>
+                    </div>
+                </div>
+                <div class="am-form-group">
+                    <div class="deal_title">
+                        <label for="post-image">演出海报:</label>
+                    </div>
+                    <div class="deal_content">
+                        <input type="file" id="post-image" name="file" multiple  accept="image/png,image/jpg,image/jpeg">
+                        <div class="row" id="post-image-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="am-form-group">
+                    <div class="deal_title">
+                        <label for="detail-image">演出详情:</label>
+                    </div>
+                    <div class="deal_content">
+                        <input type="file" id="detail-image" name="file" multiple  accept="image/png,image/jpg,image/jpeg">
+                        <div class="row" id="detail-image-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="am-form-group">
+                    <p><button id="create_deal_submit_btn" class="am-btn am-btn-primary am-fr">提交</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+</div>
+<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+<footer>
+    <hr>
+    <p class="am-padding-left">© CopyRight 2015，江苏兆米信息科技有限公司，All Rights Reserved. 苏ICP备15013612号</p>
+</footer>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="js/jquery.datetimepicker.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/Sortable.min.js"></script>
+<script src="js/fileinput.min.js"></script>
+<script src="js/locales/zh.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/app.js"></script>
+<script src="js/create_deal.js"></script>
+
+</body>
+
+</html>

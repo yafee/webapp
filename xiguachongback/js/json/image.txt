@@ -1,0 +1,12 @@
+{
+"data":[
+    {
+     "id": "1",
+     "dealId": "11",
+     "dealItemId": "111",
+     "descriptionImage": "这是一张图片",
+     "dealImage": "http://www.xiguachong.cn/imgs/index/siwang_vedioface.png"
+
+   }
+]
+}

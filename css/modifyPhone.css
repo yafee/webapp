@@ -1,0 +1,38 @@
+/* base css */
+body,
+#content,
+#content input{
+	background: #202020;
+}
+.validate button,
+.btn,.btn:hover{
+	border: none;
+}
+#content input,
+.validate button,
+.btn,.btn:hover{
+	color: #fff;
+}
+#content input,
+.validate button{
+	height: 3.5rem;    
+}
+
+#content{
+	padding: 3rem 2rem 0;
+}
+#content input{
+	margin-bottom: 1rem;
+	border: .1rem solid #666;                  
+}      
+.validate button{   
+	font-size: 1.4rem;
+	width: 35%;
+	min-width: 7rem;
+	background: #666;
+}
+.btn,.btn:hover{  
+	background: #1dbcd2;
+	height: 4.5rem;
+	margin-top: 2rem; 
+}

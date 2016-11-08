@@ -1,0 +1,60 @@
+/* base css */
+input,select,textarea,body,#content{
+	background: #202020;
+}
+input,select,textarea,.btn,.btn:hover{
+	color: #fff;
+}
+select,.btn,.btn:hover{
+	border: none;
+}
+
+input,
+textarea{
+	border: .1rem solid #666;        
+} 
+input{
+	width: 100%;
+	height: 3.5rem;
+	margin-bottom: 1rem;
+	padding: 0 .5rem;
+}
+select{
+	width: 20rem;
+	height: 3rem;
+	margin: .2rem 0 1rem 0;
+	background: #fff;
+	color: #333;
+}
+textarea{
+	width: 70%;
+	height: 8rem;
+	margin: .5rem 0 1.2rem;
+}
+#content{
+	padding: 2rem 2rem 0;
+}
+.address-info{
+	margin-bottom: 2rem;
+}
+.receiver,
+.phone{
+	margin-bottom: .5rem;
+}
+.province{
+	margin-top: .5rem;
+}
+.address-info div span:nth-of-type(2){
+	float: right;  
+}
+.address-info hr{ 
+	margin-top: .5rem;
+}
+.address-info div{
+	margin-top: -.5rem; 
+}
+.btn,.btn:hover{  
+	background: #1dbcd2;
+	height: 4.5rem;
+	margin-bottom: 2rem;
+}
